@@ -1,0 +1,29 @@
+body{
+    font-family: sans-serif;
+}
+/*Imagem é um elemento de linha*/
+
+h1, p, div, footer{
+    border: 3px solid red; /*Border: tamanho, estilo, cor */
+}
+
+p{
+    width: 50%;
+    padding:25px;
+}
+/*Nao é aplicada propriedades de BOX MODEL em elementos com propriedade de linha, pra fazer a conversão entre linha/bloco utilizamos o display*/
+div{
+    margin: 50px;
+}
+
+b,em,a,span{
+    background-color: yellow;
+}
+
+em{
+    height: 50px;
+    width: 200px;
+    margin: 5px;
+    padding: 50px;
+    display: inline-block; /*BLOCK Transforma o comportamento de linha em comportamento de bloco (BOXMODEL), gerando quebra de linha, se quisermos aplicar propriedades de bloco em elementos de linha, utilizamos o INLINE-BLOCK, o NONE vai tirar o em do HTML (visibility:hidden; tambem esconde, mas nao tira do HTML, o espaço que ele ocupava vai ser mantido)*/ 
+}
