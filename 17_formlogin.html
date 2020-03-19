@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    
+    <head>
+        <title>17_formlogin</title> 
+        <meta charset="utf-8">
+        <meta name="author" content="Tiago-Perri"> 
+        <meta name="description" content="Treinamento básico HTML">
+        <meta name="keywords" content="html5,tech,yankton"> 
+
+        <style>
+            .formLogin{
+                width: 250px;
+                margin: 50px auto 0;
+                font-family: sans-serif;
+            }
+
+            .formLogin fieldset{
+                background-color: #ccc;
+            }
+
+            .formLogin legend{
+                background-color: white;
+                display: inline-block;
+                padding: 10px;
+            }
+
+            .formLogin label{
+                margin-top: 15px;
+                display: block;
+                margin-bottom: 5px;
+            }
+
+            #user,#senha,.btn{
+                display: block;
+                width: 100%;
+                box-sizing: border-box;
+                font-size: 18px;
+                padding: 15px;
+                border: none;
+                background-color: #ddd;
+            }
+
+            #user:focus,#senha:focus{
+                background-color: white;
+            }
+
+            .btn{
+                margin-top: 15px;
+            }
+
+            #user{
+                margin-bottom: 15px;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <h1>Exemplo de Formulário</h1>
+
+        <form action="#" method="POST" class="formLogin"> <!--Como irei enviar os dados ao servidor?-->
+
+            <fieldset>
+                <legend>Login</legend>
+                <label for="user">Digite o seu usuário</label>
+                <input type="text" name="q" id="user"> <!--type text Cria uma caixa de texto-->
+
+                <label for="senha">Digite a senha</label>
+                <input type="password" name="" id="senha" name="pass">
+
+                <input type="submit" value="logar" class="btn">
+            </fieldset>
+        </form>
+    </body>
+
+</html>

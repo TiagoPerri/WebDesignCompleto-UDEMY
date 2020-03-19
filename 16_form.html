@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    
+    <head>
+        <title>16_form</title> 
+        <meta charset="utf-8">
+        <meta name="author" content="Tiago-Perri"> 
+        <meta name="description" content="Treinamento básico HTML">
+        <meta name="keywords" content="html5,tech,yankton"> 
+
+        <link rel="stylesheet" href="css/16_form.css">
+    </head>
+
+    <body>
+        <h1>Exemplo de Formulário</h1>
+
+        <form action="pagina.php" method="GET" target="_blank"> <!--Como irei enviar os dados ao servidor?-->
+
+            <fieldset>
+                <legend>Login</legend>
+                <label for="txtbusca">Faça uma busca</label>
+                <input type="text" name="q" id="txtbusca"> <!--type text Cria uma caixa de texto-->
+                <label for="btnok">Confirme seus dados: </label>
+                <input type="submit" value="confirmar" name="" id="btnok"> <!--value é o texto que aparece dentro do botão-->
+            </fieldset>
+        </form>
+    </body>
+
+</html>

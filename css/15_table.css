@@ -1,0 +1,23 @@
+body{
+    font-family: sans-serif;
+}
+
+table{
+    border-collapse: collapse; /*Bordas sem separação*/
+    width: 80%;
+    margin: auto;
+    background-color: beige;
+}
+
+th{
+    background-color: chocolate; 
+    border: 2px solid black;
+    padding: 15px;
+ }
+
+td{
+    border: 1px solid black;
+    text-align: center;
+    padding: 10px;
+}
+

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    
+    <head>
+        <title>20_boxShadow</title> 
+        <meta charset="utf-8">
+        <meta name="author" content="Tiago-Perri"> 
+        <meta name="description" content="Treinamento básico HTML">
+        <meta name="keywords" content="html5,tech,yankton"> 
+
+        <style>
+
+            h1{
+                font-family: sans-serif;
+                font-size: 50px;
+                text-align: center;
+                text-shadow: -10px -10px 4px #ddd, -1px 1px 0 #5d5d5d, -2px 2px 0 #727272, 
+                -3px 3px 0 #868686, -4px 4px 0 #a3a3a3;
+            }
+
+            #radius{
+                background-color: orange;
+                width: 200px;
+                height: 200px;
+                margin: 50px auto;
+
+                border-radius: 50px 100px / 100px 50px; /*Apos a / muda-se o eixo Y*/
+
+                box-shadow: 10px 10px 10px black;
+            }
+
+            #radius2{
+                background-color: orange;
+                width: 200px;
+                height: 200px;
+                margin: 50px auto;
+
+                border-radius: 50px 100px / 100px 50px; 
+
+                box-shadow: -10px -10px 0 red;
+            }
+
+            #radius3{
+                background-color: orange;
+                width: 200px;
+                height: 200px;
+                margin: 50px auto;
+
+                border-radius: 50px 100px / 100px 50px; 
+
+                box-shadow: -10px -10px 10px 20px black, 10px 10px 10px 20px blue;
+                /*posicao posicao esfumacamento tamanho cor*/
+            }
+        </style>
+    </head>
+
+    <body>
+       <h1>CSS efeitos</h1>
+
+       <div id="radius"></div>
+       <div id="radius2"></div>
+       <div id="radius3"></div>
+    </body>
+
+</html>

@@ -1,0 +1,19 @@
+p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+li ol{
+    height: 0;
+    overflow: hidden;
+    transition: height 0.5s;
+}
+
+li:hover{
+    background-color: green;
+}
+
+li:hover ol{
+    height: 60px;
+}

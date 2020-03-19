@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    
+    <head>
+        <title>19_border_radius</title> 
+        <meta charset="utf-8">
+        <meta name="author" content="Tiago-Perri"> 
+        <meta name="description" content="Treinamento básico HTML">
+        <meta name="keywords" content="html5,tech,yankton"> 
+
+        <style>
+            #radius{
+                background-color: orange;
+                width: 200px;
+                height: 200px;
+                margin: 50px auto;
+
+                border-radius: 25px; /*100% ou 50% nos da uma esfera perfeita*/
+            }
+
+            #radius2{
+                background-color: orange;
+                width: 200px;
+                height: 200px;
+                margin: 50px auto;
+
+                border-radius: 100%; /*100% ou 50% nos da uma esfera perfeita*/
+            }
+
+            #radius3{
+                background-color: orange;
+                width: 200px;
+                height: 200px;
+                margin: 50px auto;
+
+                border-radius: 50px 20px 100px 0; /*100% ou 50% nos da uma esfera perfeita*/
+            }
+
+            #radius4{
+                background-color: orange;
+                width: 200px;
+                height: 200px;
+                margin: 50px auto;
+
+                border-radius: 50px 100px / 50px 100px; /*Apos a / muda-se o eixo Y*/
+            }
+        </style>
+    </head>
+
+    <body>
+       <h1>CSS efeitos</h1>
+
+       <div id="radius"></div>
+       <div id="radius2"></div>
+       <div id="radius3"></div>
+       <div id="radius4"></div>
+    </body>
+
+</html>

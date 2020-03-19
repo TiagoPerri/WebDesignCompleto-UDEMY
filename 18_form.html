@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    
+    <head>
+        <title>18_form</title> 
+        <meta charset="utf-8">
+        <meta name="author" content="Tiago-Perri"> 
+        <meta name="description" content="Treinamento básico HTML">
+        <meta name="keywords" content="html5,tech,yankton"> 
+    </head>
+
+    <body>
+        <h1>Exemplo de Formulário</h1>
+
+        <form action="#" method="POST" class="formLogin"> <!--Como irei enviar os dados ao servidor?-->
+
+            <fieldset>
+                <legend>Dados pessoais</legend>
+
+                <label>Email</label>
+                <input type="email" required maxlength="30" placeholder="Digite um e-mail válido">
+                
+                <br>
+                <label>Numero de filhos</label>
+                <input type="number" min="0" max="1000">
+                
+                <br>
+                <label>nascimento</label>
+                <input type="date" min="2000-01-30" max="2138-01-30">
+
+                <p>Sexo</p>
+                <label>
+                    <input type="radio" name="sexo" value="M">
+                    Masculino
+                </label>
+                
+                <label>
+                    <input type="radio" name="sexo" value="F">
+                    Feminino
+                </label>
+
+                <br>
+                <input type="hidden" name="expira" value="2139-01-01">
+                <label>Estado</label>
+                <select>
+                    <option value="0">Selecione</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="MG">Minas Gerais</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <legend>Área de interesse</legend>
+                
+                <label>
+                <input type="checkbox" name="html" value="html">HTML
+                </label>
+
+                <label>
+                    <input type="checkbox" name="css" value="css">CSS
+                </label>
+
+                <label>
+                    <input type="checkbox" name="JS" value="JS">Javascript
+                </label>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Mensagem</legend>
+                <textarea style="resize: none;" name="msg" cols="30" rows="10" maxlength="100"></textarea>
+
+                <textarea style="resize: none;" name="Contrato" cols="30" rows="10" readonly>Texto do contrato que precisa ser aceito
+                </textarea>
+                <label>
+                    <input type="checkbox" checked>
+                    Li e aceito
+                </label>
+
+                <input type="range" min="0" max="10" step="2"> <!--STEP é de quanto em quanto a barra pula-->
+                <input type="time">
+                <input type="color">
+
+                <select multiple size="5"> <!--Multiple deixa selecionar mais de uma opção-->
+                    <option>opção 1</option>
+                    <option>opção 2</option>
+                    <option>opção 3</option>
+                    <option>opção 4</option>
+                    <option>opção 5</option>
+                </select>
+            </fieldset>
+
+                <br>
+                <input type="submit" value="Enviar"> <!--ENVIA O FORM-->
+                <input type="button" value="button"> <!--NAO FAZ NADA-->
+                <input type="reset" value="Limpar"> <!--LIMPA TODO O FORM-->
+        </form>
+    </body>
+
+</html>
