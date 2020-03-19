@@ -1,0 +1,44 @@
+body{
+    background-color: cyan;
+}
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px; /*Tamanho da fonte*/
+    font-style: italic; /*Estilo da fonte*/
+    font-variant: small-caps; /*Todas maiuscula*/
+    color: #ffffff; /*Cor HEXADECIMAL, pode ser RGB e o nome da cor*/ 
+    background-color: black ; /*COR DE FUNDO*/
+
+    /*AQUI TRATAMOS DO BOX MODEL*/
+    margin: 20px 15px 15px 20px; /*Propriedades MARGIN e PADDING podem ser resumidas em uma unica linha*/
+    padding: 50px 25px 50px 25px;/*Seguindo a ordem: top right bottom left */
+    width: 250px; /*Largura*/
+    height: 200px; /*Altura, soma-se ao padding*/
+}
+
+h2{
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-size: 24px;
+    border-color: red;
+    border-style: groove; /*Estilo da borda*/
+    border-width: 5px; /*Espessura da borda*/
+    /*Border também da parta ser resumida, border-top-style:solid; Apresentaria mudança só na parte de cima da borda*/
+}
+
+.paragrafo{
+    text-align: center; /*Alinhamento do texto*/
+    text-decoration: underline; /*Colocar sublinhado,riscos,etc.*/
+    text-indent: 50px; /*Identação do paragrafo*/
+    text-transform: uppercase; /*Tudo maiusculo*/
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.p2{
+    color: red;
+    background-color: black;
+    font-style: italic;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
