@@ -1,0 +1,52 @@
+#container{
+    width: 80%;
+    padding: 15px;
+    background-color: #ccc;
+    overflow: auto;
+}
+
+#container div{
+    width: 90px;
+    height: 50px;
+    border: 2px solid red;
+    margin: 5px;
+}
+
+#div1{
+    float: left;
+}
+
+#div2{
+    float: left;
+} /*FLOAT e CLEAR caminham juntas*/
+/*elementos com FLOAT se entendem*/
+
+#div3{
+    background-color: rgba(255,0,0, 0.5);
+    float: left;
+}
+
+header{
+    background-color: green;
+    height: 50px;
+}
+
+nav{
+    width: 25%;
+    height: 50px;
+    background-color: red;
+    float: left;
+}
+
+main{
+    width: 70%;
+    height: 100px;
+    background-color: yellow;
+    float: left;
+}
+
+footer{
+    height: 50px;
+    background-color: blue;
+    clear: both; /*clear: both; Nao deixa os elementos com FLOAT afetarem-na, independente se é right ou left*/
+}

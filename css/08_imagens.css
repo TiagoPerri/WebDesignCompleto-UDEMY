@@ -1,0 +1,28 @@
+body{
+    font-size: 22px;
+    font-family: sans-serif;
+    width: 700px;
+    margin: auto;
+    background-image: url(../img/bg.jpg); /*Utilizamos o ../ para voltarmos a uma pasta ORIGEM*/
+    background-attachment: fixed; /*define se a imagem de fundo "rola" ou não com a tela*/
+    background-repeat: no-repeat; /*Foto não repete, fica FIXA*/
+    background-size: cover; /*Ajusta a imagem da forma que queremos, cover ocupa a área inteira*/
+    background-position: right bottom; /*EIXO HORIZONTAL EIXO VERTICAL*/
+}
+
+p{
+    line-height: 1.5;
+    font-size: 18px;
+}
+
+.imgshark{
+float: right;
+}
+
+.logohtml{
+    float: left;
+}
+
+.imgcss{
+    float: right;
+}

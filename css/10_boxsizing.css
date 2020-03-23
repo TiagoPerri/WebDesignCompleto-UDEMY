@@ -1,0 +1,15 @@
+div{
+    background-color: green;
+    width: 150px;
+    height: 100px;
+    margin: 10px;
+}
+
+#div1{
+    padding: 25px;
+}
+
+#div2{
+    padding: 25px;
+    box-sizing: border-box;
+}
