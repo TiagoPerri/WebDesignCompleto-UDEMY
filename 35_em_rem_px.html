@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    
+    <head>
+        <title>35_em_rem_px</title> 
+        <meta charset="utf-8">
+        <meta name="author" content="Tiago-Perri"> 
+        <meta name="description" content="Treinamento básico HTML">
+        <meta name="keywords" content="html5,tech,yankton"> 
+
+        <meta name="viewport" content="width=device-width">
+
+        <style>
+            html{
+                font-size: 32px;
+            }
+
+            body{
+                font: 16px sans-serif;
+            }
+
+            h1{
+                text-align: center;
+            }
+
+            div{
+                border: 1px solid black;
+                padding: 1em;
+                /*width: 320px;
+                320px / 16*/
+                width: 20em;
+                /*margin:100px;
+                100px /16 = 6.25*/
+                margin: 6.25em auto;
+               /*EM é sempre relativo ao tamanho da FONTE
+               REM é sempre relativo ao tamanho do elemento principal, que é o HTML*/
+            }
+
+            p{
+                margin: 0;
+                line-height: 1.5;
+                font-size: 1.25em;
+                /*font-size:20px
+                16 * 1.25 = 20*/
+            }
+
+            a{
+                font-size: 1rem;
+                /*font-size: 1.2em;
+                font-size: 24px 
+                24px /20 = 1.2
+                conta é por 20 pois o FONT do elemento pai, é 20, sempre se relaciona*/
+            }
+        </style>
+    </head>
+
+    <body>
+       <h1>Unidades de medida</h1>
+
+       <div>
+            <p>Lorem Ipson distracted by the readable content of a page when looking at its layout.<a href="#">letters, as opposed to using 'Content here, content here'.</a> Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.</p>
+       </div>
+    </body>
+
+</html>
