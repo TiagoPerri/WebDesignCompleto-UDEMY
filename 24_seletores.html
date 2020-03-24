@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    
+    <head>
+        <title>24_seletores</title> 
+        <meta charset="utf-8">
+        <meta name="author" content="Tiago-Perri"> 
+        <meta name="description" content="Treinamento básico HTML">
+        <meta name="keywords" content="html5,tech,yankton"> 
+
+        <!--Resumo do conteúdo no final do Documento-->
+
+        <style>
+            article:nth-child(1) a{
+                color: red;
+            }
+
+            article:nth-child(3) > p{
+                color: green;
+            }
+
+            article:nth-child(5) h3 + p{
+               margin-top: 50px;
+            }
+
+            article:nth-child(7) h3 ~ p{
+               color: blue;
+            }
+
+            article:not(.destaque){
+                color: orange;
+            }
+
+            .destaque{
+                background-color: yellow;
+            }
+
+            a[href="#"]{
+                opacity: .2;
+            }
+
+            a[href^="http"]{
+                color: red;
+            }
+
+            a[title]{
+                color: green;
+            }
+
+            a[href$=".pdf"]{
+                color: black;
+                text-decoration: none;
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+       <article>
+           <h3>
+               24_seletores
+           </h3>
+           <p>parágrafo 1: <a href="#">Apenas um link com <b>negrito</b></a></p>
+           <p>parágrafo 2: <a href="#">Apenas um link com <b>negrito</b></a></p>
+           <p>parágrafo 3: <a href="#">Apenas um link com <b>negrito</b></a></p>
+       </article>
+
+       <hr>
+
+       <article>
+        <h3>
+            Trabalhando seletor >
+        </h3>
+        <p>parágrafo 1: <a href="#">Apenas um link com <b>negrito</b></a></p>
+        <p>parágrafo 2: <a href="#">Apenas um link com <b>negrito</b></a></p>
+        <p>parágrafo 3: <a href="#">Apenas um link com <b>negrito</b></a></p>
+        </article>
+
+        <hr>
+
+        <article>
+         <h3>
+             Trabalhando seletor +
+         </h3>
+         <p>parágrafo 1: <a href="#">Apenas um link com <b>negrito</b></a></p>
+         <p>parágrafo 2: <a href="#">Apenas um link com <b>negrito</b></a></p>
+         <p>parágrafo 3: <a href="#">Apenas um link com <b>negrito</b></a></p>
+        </article>
+
+        <hr>
+
+        <article>
+         <p>Antes do título</p>
+         <h3>
+             Trabalhando seletor ~
+         </h3>
+         <p>parágrafo 1: <a href="#">Apenas um link com <b>negrito</b></a></p>
+         <p>parágrafo 2: <a href="#">Apenas um link com <b>negrito</b></a></p>
+         <p>parágrafo 3: <a href="#">Apenas um link com <b>negrito</b></a></p>
+        </article>
+
+        <hr>
+
+        <article class="destaque">
+         <p>Antes do título</p>
+         <h3>
+             Trabalhando seletor :not()
+         </h3>
+         <p>parágrafo 1: <a href="#">Apenas um link com <b>negrito</b></a></p>
+         <p>parágrafo 2: <a href="#">Apenas um link com <b>negrito</b></a></p>
+         <p>parágrafo 3: <a href="#">Apenas um link com <b>negrito</b></a></p>
+        </article>
+
+        <ul>
+            <li><a href="#">Link falso</a></li>
+            <li><a href="#">Link falso</a></li>
+            <li><a href="http://serfrontend.com" target="_blank">Link externo</a></li>
+            <li><a href="http://serfrontend.com/doc.pdf" target="_blank">Seletor $</a></li>
+            <li><a href="23_transition.html" target="_blank" title="Veja exercício 23_transition">Link interno</a></li>
+        </ul>
+    </body>
+
+</html>
+
+<!--
+> filho direto
++ irmão adjacento, proximo irmao imediato
+~ próximos irmãos
+
+Seletores de atributos
+tag[atributo]
+
+img[alt=""]  vai selecionar toda imagem que tiver o alt passado por parametro
+
+a[href^="http"] vai selecionar todo href que INICIA com http
+a[src$=".png"] vai selecionar todo href que TERMINA com .png
+
+:not(a)  negação, todos que não sejam a
+-->

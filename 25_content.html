@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    
+    <head>
+        <title>25_content</title> 
+        <meta charset="utf-8">
+        <meta name="author" content="Tiago-Perri"> 
+        <meta name="description" content="Treinamento básico HTML">
+        <meta name="keywords" content="html5,tech,yankton"> 
+
+        <style>
+            div{
+                border: 2px solid black;
+                padding: 25px;
+                position: relative;
+                margin: 25px;
+            }
+
+            div:before{
+                content: "before: "; /*Não é selecionável*/
+                background-color: yellow;
+            } /*Se temos before ou after, obrigatoriamente teremos um content*/
+
+            div:after{
+                content: ""; /*Não é selecionável*/
+                background-color: red;
+                display: inline-block;
+                width: 25px;
+                height: 25px;
+                position: absolute;
+                bottom: 0;
+                right: 0; /*Posiocionando o bloco na parte inferior direita da div*/
+            } /*Se temos before ou after, obrigatoriamente teremos um content*/
+
+        </style>
+
+    </head>
+
+    <body>
+        <div>Texto principal da div</div>
+
+        <article>
+           <h3>
+               24_seletores
+           </h3>
+           <p>parágrafo 1: <a href="#">Apenas um link com <b>negrito</b></a></p>
+           <p>parágrafo 2: <a href="#">Apenas um link com <b>negrito</b></a></p>
+           <p>parágrafo 3: <a href="#">Apenas um link com <b>negrito</b></a></p>
+       </article>
+
+       <ul>
+        <li><a href="#">Link falso</a></li>
+        <li><a href="#">Link falso</a></li>
+        <li><a href="http://serfrontend.com" target="_blank">Link externo</a></li>
+        <li><a href="http://serfrontend.com/doc.pdf" target="_blank">Seletor $</a></li>
+        <li><a href="23_transition.html" target="_blank" title="Veja exercício 23_transition">Link interno</a></li>
+    </ul>
+    </body>
+
+</html>

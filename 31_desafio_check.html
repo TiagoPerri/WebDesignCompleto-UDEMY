@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    
+    <head>
+        <title>31_desafio_check</title> 
+        <meta charset="utf-8">
+        <meta name="author" content="Tiago-Perri"> 
+        <meta name="description" content="Treinamento básico HTML">
+        <meta name="keywords" content="html5,tech,yankton"> 
+
+        <style>
+            body{
+                font-family: sans-serif;
+            }
+
+            label{
+                margin-right: 25px;
+            }
+
+            .spanlabel{
+                display: inline-block;
+                background-color: rgb(187, 187, 115);
+                width: 60px;
+                height: 30px;
+                border-radius: 15px;
+            }
+
+            .spanlabel:before{
+                content: "";
+                display: block;
+                width: 20px;
+                height: 20px;
+                border-radius: 100%;
+                margin: 5px;
+                background-color: white;
+                transition: all .2s ease-in-out;
+            }
+
+            label input:checked + span:before{
+                transform: translateX(30px);
+                background-color: black;
+            }
+
+            input[type="checkbox"]{
+                width: 1px;
+                height: 1px;
+                overflow: hidden;
+                opacity: 0;
+                display: inline-block;
+                margin: 0;
+            }
+
+            input:focus + span{
+                box-shadow: 0 0 0 1px black;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>31_desafio_check</h1>
+       <label>
+            <input type="checkbox">
+            <span class="spanlabel"></span>
+            Esporte
+       </label>
+
+       <label>
+            <input type="checkbox">
+            <span class="spanlabel"></span>
+            Política
+        </label>
+
+        <label>
+            <input type="checkbox">
+            <span class="spanlabel"></span>
+            Educação
+        </label>
+    </body>
+
+</html>

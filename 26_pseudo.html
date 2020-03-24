@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    
+    <head>
+        <title>26_pseudo</title> 
+        <meta charset="utf-8">
+        <meta name="author" content="Tiago-Perri"> 
+        <meta name="description" content="Treinamento básico HTML">
+        <meta name="keywords" content="html5,tech,yankton"> 
+
+        <style>
+            input[type="checkbox"]{
+                height: 50px;
+                width: 50px;
+            }
+
+            input[type="checkbox"]:checked{
+                width: 25px;
+                height: 25px;
+            }
+
+            button:disabled{
+                background-color: blue;
+            }
+
+            p{
+                color: red;
+            }
+
+            p:empty:before{
+                content: "Parágrafo vazio não dá né?!";
+            }
+
+            input[type="text"]:focus{
+                background-color: #ccc;
+            }
+
+            a:focus, a:hover, div:focus{
+                background-color: red;
+            }
+
+            input::placeholder{
+                color: blue;
+            }
+
+            input:read-only{
+                background-color: green;
+            }
+        </style>
+    </head>
+
+    <body>
+       <label><input type="checkbox" value="sim">Aceito o contrato</label>
+
+       <button>Vai</button>
+       <button disabled>Volta</button>
+
+       <p>Parágrafo 1</p>
+       <p> </p>
+       <p></p>
+       <hr>
+
+       <input type="text">
+       <input type="text" value="valor inicial">
+       <input type="text" value="Apenas leitura" readonly>
+       <input type="text" value="Desativado" disabled>
+       <input type="text" placeholder="valor do placeholder" >
+
+       <ul>
+           <li><a href="#">Link falso</a></li>
+           <li><a href="#">Link falso</a></li>
+           <li><a href="#">Link falso</a></li>
+           <li><a href="#">Link falso</a></li>
+       </ul>
+
+       <div tabindex="1">div 1</div> <!--Forçar para receber focus-->
+       <div tabindex="2">div 2</div>
+       <div tabindex="3">div 3</div>
+    </body>
+
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    
+    <head>
+        <title>29_transforms</title> 
+        <meta charset="utf-8">
+        <meta name="author" content="Tiago-Perri"> 
+        <meta name="description" content="Treinamento básico HTML">
+        <meta name="keywords" content="html5,tech,yankton"> 
+
+            <style>
+
+                html,body{
+                    margin: 0;
+                    padding: 0;
+                    height: 100%;
+                }
+
+                .div1{
+                    height: 50px;
+                    width: 150px;
+                    background-color: red;
+                    transform: translate(50%, 50%); /*(Eixo x eixo y), relativo ao tamanho dele mesmo*/
+                }
+
+                .div2{
+                    height: 50px;
+                    width: 150px;
+                    background-color: blue;
+                    position: relative; /*Relativo ao tamanho pai*/
+                    left: 50%;
+                }
+
+                .div3{
+                    width: 50%;
+                    overflow: hidden;
+                    border: solid 2px black;
+                }
+
+                .div3-interna{
+                    background-color: yellow;
+                    transform: translate(80%,25px);
+                }
+
+                .div4{
+                    width: 50%;
+                    overflow: hidden;
+                    border: solid 2px black;
+                }
+
+                .div4-interna{
+                    background-color: yellow;
+                    transform: rotate(-10deg);
+                }
+
+                .div5{
+                    width: 50%;
+                    overflow: hidden;
+                    border: solid 2px black;
+                }
+
+                .div5-interna{
+                    background-color: yellow;
+                    transform: rotate(30deg);
+                    transform-origin: left top;
+                }
+
+                .div6{
+                    width: 50%;
+                    overflow: hidden;
+                    border: solid 2px black;
+                }
+
+                .div6-interna{
+                    background-color: yellow;
+                    transform: rotate(30deg) translate(50px); /*Eixo x se rotacionou, ou seja, as transformações se complementam*/
+                }
+
+                .div7{
+                    width: 50%;
+                    overflow: hidden;
+                    border: solid 2px black;
+                }
+
+                .div7-interna{
+                    background-color: yellow;
+                    transform: translate(50px) rotate(30deg);
+                }
+
+                .div8{
+                    height: 100px;
+                    width: 100px;
+                    background-color: green;
+                    transform: skew(-30deg,50deg);
+                }
+
+                .div9{
+                    height: 100px;
+                    width: 100px;
+                    background-color: blue;
+                    transform: scale(.5) translateX(50%);
+                    transition: transform .5s;
+                }
+
+                .div9:hover{
+                    transform: scale(2);
+                }
+            </style>
+    </head>
+
+    <body>
+       <div class="div1">div1</div>
+       <div class="div2">div2</div>
+
+       <hr>
+       <div class="div3">
+            <div class="div3-interna">Conteúdo qualquer</div>
+            <p>Mussum Ipsum, cacilds vidis litro abertis. Aenean aliquam molestie leo, vitae iaculis nisl. Atirei o pau no gatis, per gatis num morreus. Detraxit consequat et quo num tendi nada. Paisis, filhis, espiritis santis.Mussum Ipsum, cacilds vidis litro abertis. Mé faiz elementum girarzis, nisi eros vermeio. Em pé sem cair, deitado sem dormir.</p>
+       </div>
+
+       <hr>
+        <div class="div4">
+            <div class="div4-interna">Conteúdo qualquer</div>
+            <p>Mussum Ipsum, cacilds vidis litro abertis. Aenean aliquam molestie leo, vitae iaculis nisl. Atirei o pau no gatis, per gatis num morreus. Detraxit consequat et quo num tendi nada. Paisis, filhis, espiritis santis.Mussum Ipsum, cacilds vidis litro abertis. Mé faiz elementum girarzis, nisi eros vermeio. Em pé sem cair, deitado sem dormir.</p>
+        </div>
+
+        <hr>
+        <div class="div5">
+            <div class="div5-interna">Conteúdo qualquer</div>
+            <p>Mussum Ipsum, cacilds vidis litro abertis. Aenean aliquam molestie leo, vitae iaculis nisl. Atirei o pau no gatis, per gatis num morreus. Detraxit consequat et quo num tendi nada. Paisis, filhis, espiritis santis.Mussum Ipsum, cacilds vidis litro abertis. Mé faiz elementum girarzis, nisi eros vermeio. Em pé sem cair, deitado sem dormir.</p>
+        </div>
+
+        <hr>
+        <div class="div6">
+            <div class="div6-interna">Conteúdo qualquer</div>
+            <p>Mussum Ipsum, cacilds vidis litro abertis. Aenean aliquam molestie leo, vitae iaculis nisl. Atirei o pau no gatis, per gatis num morreus. Detraxit consequat et quo num tendi nada. Paisis, filhis, espiritis santis.Mussum Ipsum, cacilds vidis litro abertis. Mé faiz elementum girarzis, nisi eros vermeio. Em pé sem cair, deitado sem dormir.</p>
+        </div>
+
+        <hr>
+        <div class="div7">
+            <div class="div7-interna">Conteúdo qualquer</div>
+            <p>Mussum Ipsum, cacilds vidis litro abertis. Aenean aliquam molestie leo, vitae iaculis nisl. Atirei o pau no gatis, per gatis num morreus. Detraxit consequat et quo num tendi nada. Paisis, filhis, espiritis santis.Mussum Ipsum, cacilds vidis litro abertis. Mé faiz elementum girarzis, nisi eros vermeio. Em pé sem cair, deitado sem dormir.</p>
+        </div>
+        <hr>
+
+        <div class="div8">div8</div>
+        <div class="div9">div9</div>
+    </body>
+
+</html>

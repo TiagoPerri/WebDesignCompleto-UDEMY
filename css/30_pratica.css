@@ -1,0 +1,60 @@
+body{
+    font-family: sans-serif;
+}
+
+a[target="_blank"]:after{
+    content: url(../img/newWindow.png);
+    display: inline-block;
+    margin-left: 5px;
+}
+
+a[href$='.pdf']:before{
+    content: url(../img/pdf-icon.gif);
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.chk{
+    display: inline-block;
+    border-radius: 5px;
+    border: 2px solid #00ff99;
+    width: 15px;
+    height: 15px;
+    background-color: #ddd;
+    margin-right: 10px;
+}
+
+label{
+    height: 15px;
+    display: inline-block;
+}
+
+input[type="checkbox"]{
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    visibility: hidden;
+    display: inline-block;
+    margin: 0;
+}
+
+input[type="checkbox"]:checked + label .chk{
+    background-color: green;
+    position: relative;
+}
+
+input[type="checkbox"]:checked + label .chk:before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 4px;
+    left: 4px;
+    bottom: 4px;
+    border: 2px solid white;
+    transform: rotate(45deg);
+    border-top-color: transparent;
+    border-left-color: transparent;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
