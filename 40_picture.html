@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    
+    <head>
+        <title>40_picture</title> 
+        <meta charset="utf-8">
+        <meta name="author" content="Tiago-Perri"> 
+        <meta name="description" content="Treinamento básico HTML">
+        <meta name="keywords" content="html5,tech,yankton"> 
+        <meta name="viewport" content="width=device-width">
+
+    </head>
+
+    <body>
+       <h1>40_Picture</h1>
+
+       <picture> <!--vw significa viewport width-->
+            <source media="(min-width: 480px)" sizes="33vw" srcset="rwd-images/1280.jpg 1280w, rwd-images/960.jpg 960w, rwd-images/480.jpg 480w"> 
+
+            <source sizes="100vw", srcset="rwd-images/822_mob.jpg 822w, rwd-images/640_mob.jpg 640w, rwd-images/320_mob.jpg 320w">
+
+            <img src="rwd-images/1280.jpg" alt="texto alternativo">
+       </picture>
+    </body>
+
+</html>

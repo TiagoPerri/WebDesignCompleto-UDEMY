@@ -1,0 +1,118 @@
+
+#grupo-cores{
+    padding: 15px;
+    background-image: url(../img/tile.png);
+    counter-reset: contador;
+}
+
+#grupo-cores div{
+    width: 80%;
+    height: 150px;
+    border: 10px solid rgba(0,0,0,.5);
+    margin: 20px auto;
+    padding: 15px;
+    counter-increment: contador;
+}
+
+#grupo-cores div::before{
+    content: "[ " counter(contador) " ]";
+}
+
+#grupo-cores div:nth-child(2){
+    background-color: yellow;
+    background-clip: content-box;
+}
+
+#grupo-cores div:nth-child(3){
+    background-color: rgb(50%, 50%, 0%);
+    background-clip: content-box;
+}
+
+#grupo-cores div:nth-child(4){
+    background-color: rgba(50%, 50%, 0%,.5);
+    background-clip: content-box;
+}
+
+#grupo-cores div:nth-child(5){
+    background-color: hsl(0deg, 100%, 50%);
+    background-clip: padding-box;
+}
+
+#grupo-cores div:nth-child(6){
+    background-color: hsla(100deg, 90%, 50%, .7);
+    background-clip: padding-box;
+}
+
+#grupo-cores div:nth-child(7){
+    background-image: linear-gradient(68deg, blue, transparent), linear-gradient(to top, red, transparent);
+    background-clip: content-box, border-box;
+}
+
+#grupo-cores div:nth-child(8){
+    background-image: radial-gradient(red,blue);
+    background-clip: content-box;
+}
+
+#grupo-cores div:nth-child(9){
+    background-image: radial-gradient(circle,red,blue);
+}
+
+#grupo-cores div:nth-child(10){
+    background-image: radial-gradient(circle,red,blue, black, rgba(50,200,40,.4));
+}
+
+#grupo-cores div:nth-child(11){
+    background-image: radial-gradient(ellipse,red 50%,blue,orange,green 100%);
+}
+
+#grupo-cores div:nth-child(12){
+    background-image: radial-gradient(ellipse,red 50%,rgba(50,10,200,.3),orange,green 100%);
+}
+
+#grupo-cores div:nth-child(13){
+    background-image: radial-gradient(closest-side at 20% 60%,red 50%,rgba(50,10,200,.3),orange,green 100%);
+}
+
+
+#grupo-cores div:nth-child(14){
+    background-image: radial-gradient(farthest-side  at 20% 60%,red 50%,rgba(50,10,200,.3),orange,green 100%);
+}
+
+
+#grupo-cores div:nth-child(15){
+    background-image: radial-gradient(closest-corner at 20% 60%,red 50%,rgba(50,10,200,.3),orange,green 100%);
+}
+
+
+#grupo-cores div:nth-child(16){
+    background-image: radial-gradient(farthest-corner  at 20% 60%,red 50%,rgba(50,10,200,.3),orange,green 100%);
+}
+
+#grupo-cores div:nth-child(17){
+    background-image: repeating-linear-gradient(red 0%, yellow 10%, blue 20%);
+}
+
+#grupo-cores div:nth-child(18){
+    background-image: repeating-linear-gradient(red 0%, yellow 10%, blue 50%);
+}
+
+#grupo-cores div:nth-child(19){
+    background-image: repeating-radial-gradient(red 0%,transparent, blue 50%);
+}
+
+#grupo-cores div:nth-child(20){
+    background-image: repeating-radial-gradient(red 0%, transparent, blue 33.33%), linear-gradient(red,blue);
+    background-attachment: scroll,fixed;
+}
+
+#grupo-cores div:nth-child(21){
+    background-image: repeating-radial-gradient(red 0%, yellow 10%, blue 20%);
+}
+
+#grupo-cores div:nth-child(22){
+    background-image: radial-gradient(closest-corner at 50% 25%, black,transparent), url(../img/bg.jpg);
+
+    background-size: cover;
+    background-position: center -40px, center bottom;
+    background-repeat: no-repeat;
+}

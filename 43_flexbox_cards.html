@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    
+    <head>
+        <title>43_flexbox_cards</title> 
+        <meta charset="utf-8">
+        <meta name="author" content="Tiago-Perri"> 
+        <meta name="description" content="Treinamento básico HTML">
+        <meta name="keywords" content="html5,tech,yankton"> 
+
+         
+        <style>
+            .cardContainer{
+                display: flex;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+            }
+
+            .cardFlex{
+                border: 1px solid black;
+                width: 30%;
+                padding: 10px;
+                margin: 1%;
+                display: flex;
+                flex-direction: column;
+                
+            }
+
+            .cardFlex p{
+                flex-grow: 1;
+            }
+
+            .cardFlex button{
+                align-self: flex-end;
+            }
+        </style>
+
+    </head>
+
+    <body>
+        <h2>43_flexbox_cards</h2>
+        <p>Acomodar ou distribuir elementos de modo fácil</p>
+        <p>Ajuda a centralizar na vertical</p>
+        
+        <section class="cardContainer">
+            <article class="cardFlex">
+                <h3>Card 1</h3>
+                <p>Texto de extensão média para teste de propriedades Flexbox, atividade 43.</p>
+                <button>Button1</button>
+            </article>
+
+            <article class="cardFlex">
+                <h3>Card 2</h3>
+                <p>Texto longo para prática da atividade 43_flexbox_cards, presente no curso web design completo oferecido pela serfrontend cursos</p>
+                <button>Button2</button>
+            </article>
+
+            <article class="cardFlex">
+                <h3>Card 3</h3>
+                <p>Pouco texto pra teste</p>
+                <button>Button3</button>
+            </article>
+        </section>
+    </body>
+
+</html>
