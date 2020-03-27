@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    
+    <head>
+        <title>46_grid</title> 
+        <meta charset="utf-8">
+        <meta name="author" content="Tiago-Perri"> 
+        <meta name="description" content="Treinamento básico HTML">
+        <meta name="keywords" content="html5,tech,yankton"> 
+
+        <style>
+            .gridContainer{
+                width: 90%;
+                background-color: rgb(255, 143, 143);
+                margin: 30px auto;
+            }
+
+            .gridItem{
+                background-color: rgb(0, 116, 110);
+                padding: 15px;
+                font-family: sans-serif;
+            }
+            
+            /* GRID */
+            .gridContainer{
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: 100px 50px 1fr 50px;
+                grid-gap: 20px;
+                
+                grid-template-areas: 
+                    "header header  header"
+                    "nav    nav     nav"
+                    "main   main    aside"
+                    "footer footer footer"
+            }
+            
+            .header{
+                grid-area: header;
+            }
+
+            .nav{
+                grid-area: nav;
+            }
+
+            .aside{
+                grid-area: aside;
+            }
+
+            .main{
+                min-height: 200px;
+                grid-area: main;
+            }
+            
+            .footer{
+                grid-area: footer
+            }
+        
+        </style>
+
+    </head>
+
+    <body>
+        <h1>46_grid-area</h1>
+
+        <div class="gridContainer">
+
+            <header class="header gridItem">header</header>
+
+            <nav class="nav gridItem">nav</nav>
+
+            <aside class="aside gridItem">aside</aside>
+
+            <main class="main gridItem">
+                main
+            </main>
+
+            <footer class="footer gridItem">footer</footer>
+        </div>
+        
+    </body>
+
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    
+    <head>
+        <title>aula02_especificidade</title> 
+        <meta charset="utf-8">
+        <meta name="author" content="Tiago-Perri"> 
+        <meta name="description" content="Treinamento básico HTML">
+        <meta name="keywords" content="html5,tech,yankton"> 
+
+        <style>
+            body{
+                font-family: sans-serif;
+            }
+            .jumbotron{
+                background-color: rgba(0,0,0,.5);
+            }
+            
+            .jumbotron__text{
+                color: white;
+            }
+            
+            .jumbotron__title{
+                color: red;
+            }
+            
+            p{
+                color: red;
+            }      
+        </style>
+        
+    </head>
+
+    <body>
+        <h1>aula02_especificidade</h1>
+        
+        <div class="jumbotron">
+            <h2 class="jumbotron__title">subtitulo</h2>
+            <p class="jumbotron__text">paragrafos</p>
+            <p class="jumbotron__text">paragrafos</p>
+        </div>
+        
+        <p style="color: blue">com estilo inline</p>
+        
+        <p lang="pt-br" class="destaque">testando atributos</p>
+        
+        <p class="destaque">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus aliquam illum facilis iure, similique asperiores aut eligendi harum officiis.</p>
+        <p class="destaque" id="unico">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus aliquam illum facilis iure, similique asperiores aut eligendi harum officiis.</p>
+        <p class="destaque">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus aliquam illum facilis iure, similique asperiores aut eligendi harum officiis.</p>
+    </body>
+
+</html>

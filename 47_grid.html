@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    
+    <head>
+        <title>47_grid</title> 
+        <meta charset="utf-8">
+        <meta name="author" content="Tiago-Perri"> 
+        <meta name="description" content="Treinamento básico HTML">
+        <meta name="keywords" content="html5,tech,yankton"> 
+
+        <style>
+            .gridContainer{
+                width: 90%;
+                background-color:  rgb(255, 143, 143);
+                margin: 30px auto;
+            }
+
+            .gridItem{
+                background-color: rgb(0, 116, 110);
+                padding: 15px;
+                font-family: sans-serif;
+            }
+            
+            .gridContainer{
+                display: grid;
+                grid-template-rows: [header-start] 100px [header-end nav-start] 50px [nav-end main-start] 1fr [main-end footer-start] 50px [footer-end];
+                grid-template-columns: [col1-start] 1fr [col1-end col2-start] 1fr [col2-end col3-start] 1fr [col3-end];
+                grid-gap: 20px;
+            }
+            
+            .header{
+                grid-column: col1-start / col3-end;
+                grid-row: header;
+            }
+
+            .nav{
+                grid-column: col1-start / col3-end;
+                grid-row: nav;
+            }
+
+            .aside{
+                grid-row: main-start / footer-end;
+                grid-column: col3-start / col3-end;           
+            }
+
+            .main{
+                min-height: 200px;
+                grid-row: main;
+                grid-column: col1-start / col2-end;
+            }
+            
+            .footer{
+                background-color: rgba(255,0,0,.5);
+                grid-row: footer;
+                grid-column: col1-start / col3-end;
+            }
+            
+        </style>
+
+    </head>
+
+    <body>
+       <h1>47_grid_Linhas-nomeadas</h1>
+
+        <div class="gridContainer">
+
+            <header class="header gridItem">header</header>
+
+            <nav class="nav gridItem">nav</nav>
+
+            <aside class="aside gridItem">aside</aside>
+
+            <main class="main gridItem">
+                main
+            </main>
+
+            <footer class="footer gridItem">footer</footer>
+        </div>
+    </body>
+
+</html>

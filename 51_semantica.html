@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    
+    <head>
+        <title>51_semântica</title> 
+        <meta charset="utf-8">
+        <meta name="author" content="Tiago-Perri"> 
+        <meta name="description" content="Treinamento básico HTML">
+        <meta name="keywords" content="html5,tech,yankton"> 
+
+        <style>
+            body{
+                font-family: sans-serif;
+            }
+        </style>
+
+    </head>
+
+    <body>
+        <h1>51_semântica</h1>
+    
+        <p>Por favor, aperte <kbd>CTRL</kbd> + <kbd>F5</kbd> Para recarregar essa página</p>
+        <!--KBD indica ao leitor de tela que o texto envolvido pela tag é uma tecla do teclado-->
+        <p>Para navegar entre janelas abertas aperte <kbd>ALT</kbd> + <kbd>TAB</kbd></p>
+        
+        <hr>
+        <h2>Curso sobre <abbr title="Linguagem de marcação de hipertexto">HTML</abbr>, <abbr title="folhas de estilo em cascata">CSS</abbr> e <abbr title="Javascript">JS</abbr></h2>
+        <!--Tag ABBR nos indica que o texto envolvido é uma abreviação-->
+
+        <hr>
+        <p>O evento ocorrerá em <time datetime="2018-09-15">15 de Setembro de 2018</time></p>
+        <p>Minha data de nascimento é <time datetime="2001-10-07">07/10/2001</time></p>
+        <p>O evento ocorrerá em <time datetime="2018-09-15T20:00:00">15/09/18 - 20:00</time></p>
+        <p>O evento ocorrerá em <time datetime="2018-09-15T20:00:00-03:00">2018, 15 de Setembro - 20h00</time></p>
+        <!--Tag time nos indica que o texto envolvido por ela é uma DATA, que se acompanhado de um T, pode ser incluído o horário tb, DATETIME especifica a data e hora no padrão americano (mundial)-->
+        
+        <hr>
+        <h2>Confirme sua presença: </h2>
+        <p>O agendamento está marcado para <time datetime="18:00">18h00</time></p>
+        
+        <p>Aprender semântica HTML é <del>complicado</del> <ins>fácil</ins></p>
+        <!--tag DEL e INS indica delete e inserção, respectivamente-->
+        
+        <p>O evento <span lang="en-us">JS Conference</span> será em Agosto</p>
+        <!--Inidica que a linguagem das palavras envolvidas na tag são da lingua inglesa-->    
+    </body>
+
+</html>
