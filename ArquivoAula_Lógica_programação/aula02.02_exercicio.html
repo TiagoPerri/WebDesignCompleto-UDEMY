@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    
+    <head>
+        <title>Lógica de Programação com Javascript - desafio 1</title> 
+        <meta charset="utf-8">
+        <meta name="author" content="Tiago-Perri"> 
+        <meta name="description" content="Treinamento básico HTML">
+        <meta name="keywords" content="html5,tech,yankton"> 
+
+    </head>
+
+    <body>
+       <h1>Lógica de Programação com Javascript - desafio 1</h1>
+
+       <script>
+            var num1 = prompt("Digite um número");  //Prompt pede algo ao usuario (similar ao scanf)
+            num1 = parseInt(num1); //converter em numero inteiro, por padrão é string                               
+            
+            var num2; //declarando variavel
+            num2 = prompt("Digite um segundo número") //pedir para o usuario digitar outro numero
+            num2 = parseInt(num2);
+                                    
+            alert("A subtração é: " + (num1-num2)); //alert similar ao printf, imprime caixas de dialogo na pagina
+            // o sinal de + é utilizado pra representar a concatenação, alem se representar a soma
+            // NaN significa NOT A NUMBER
+                                    
+            alert("A multiplicação é: " + (num1*num2));
+            alert("A divisão é: " + (num1/num2));
+            alert("A soma é: " + (num1+num2));
+        
+       </script>
+    </body>
+
+</html>
