@@ -14,6 +14,18 @@
        <h1>Lógica de programação com Javascript</h1>
 
        <script>
+           var num = prompt("Digite o número para ver sua tabuada");
+           num = parseInt(num);
+
+           var i = 0;
+           while(i<=100){
+               document.write(num + " X " + i + " = " + (num*i) + "<br>");
+
+               if(i % 10 === 0 && i>0){
+                   document.write("<hr>");
+               }
+               i++;
+            }
            
        </script>
     </body>

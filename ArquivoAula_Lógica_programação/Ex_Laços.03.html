@@ -14,7 +14,15 @@
        <h1>Lógica de programação com Javascript</h1>
 
        <script>
-           
+           for(var i = 1004; i <= 2017; i = i+4){
+
+                if( (i % 100 !== 0) || (i % 400 === 0) ){
+                    document.write(i + " É ano bissexto! <br>");
+                } else {
+                    document.write("ATENÇÃO!! " + i + " Não é bissexto! <br>");
+                }
+           }
+
        </script>
     </body>
 

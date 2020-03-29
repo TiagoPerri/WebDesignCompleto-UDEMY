@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    
+    <head>
+        <title>Lógica de programação com Javascript</title> 
+        <meta charset="utf-8">
+        <meta name="author" content="Tiago-Perri"> 
+        <meta name="description" content="Treinamento básico HTML">
+        <meta name="keywords" content="html5,tech,yankton"> 
+        
+    </head>
+
+    <body>
+       <h1>Lógica de programação com Javascript</h1>
+
+       <script>
+           var player1 = parseInt(prompt("Player 1: Digite um número"));
+           var player2 = parseInt(prompt("Player 2: Digite um número"));
+
+           if(player1 === player2){
+                alert("os números são iguais... Empate!");
+           } else {
+                var result = parseInt(Math.random() * 2);
+                alert("A nível de curiosidade, o número sorteado foi: " + result);
+
+                    if( (result === 0 && player1 < player2) || (result === 1 && player1 > player2) ){
+                            alert("Player 1 ganhou");
+                        } else {
+                            alert("Player 2 ganhou");
+                        }          
+                }
+       </script>
+    </body>
+
+</html>
