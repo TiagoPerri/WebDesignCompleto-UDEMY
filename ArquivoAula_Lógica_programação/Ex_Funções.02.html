@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    
+    <head>
+        <title>Lógica de programação com Javascript</title> 
+        <meta charset="utf-8">
+        <meta name="author" content="Tiago-Perri"> 
+        <meta name="description" content="Treinamento básico HTML">
+        <meta name="keywords" content="html5,tech,yankton"> 
+        
+    </head>
+
+    <body>
+       <h1>Lógica de programação com Javascript</h1>
+
+       <button onclick="tabuada()">Criar Tabuada</button>
+       <button onclick="clean()">Limpar</button>
+
+       <div id="output"></div>
+
+       <script>
+
+            function tabuada(){
+
+                var num = prompt('Digite um número para ver sua tabuada');
+                num = parseFloat(num);
+
+                clean();
+
+                var i = 1;
+                while(i<=100){
+                    mensagem = mensagem + (num + ' X ' + i + '=' + (num*i) + '<br>');
+                    i++;
+                }  
+
+                output.innerHTML = mensagem;  
+            }
+
+            function clean(){
+                mensagem = '';
+                output.innerHTML = mensagem;
+            }  
+
+            var output = document.querySelector('#output');
+            var mensagem = ''; 
+            
+       </script>
+    </body>
+
+</html>
