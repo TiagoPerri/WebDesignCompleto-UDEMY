@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    
+    <head>
+        <title>Lógica de programação com Javascript</title> 
+        <meta charset="utf-8">
+        <meta name="author" content="Tiago-Perri"> 
+        <meta name="description" content="Treinamento básico HTML">
+        <meta name="keywords" content="html5,tech,yankton"> 
+        
+    </head>
+
+    <body>
+       <h1>Lógica de programação com Javascript</h1>
+
+       <div id="output"></div>
+
+       <script>
+           var output = document.querySelector('#output');
+
+           var mensagem = '';
+           for(var i = 0; i<=1001; i++){
+               mensagem += 'i:' + i + '<br>';
+           }
+
+           output.innerHTML = mensagem;
+           
+       </script>
+    </body>
+
+</html>

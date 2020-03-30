@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    
+    <head>
+        <title>Lógica de programação com Javascript</title> 
+        <meta charset="utf-8">
+        <meta name="author" content="Tiago-Perri"> 
+        <meta name="description" content="Treinamento básico HTML">
+        <meta name="keywords" content="html5,tech,yankton"> 
+        
+    </head>
+
+    <body>
+       <h1>Lógica de programação com Javascript</h1>
+
+       <script>
+            var p1 = prompt("Digite a nota da Prova 1: ");
+            p1 = parseFloat(p1);
+
+            var p2 = prompt("Agora digite a nota da Prova 2: ");
+            p2 = parseFloat(p2);
+
+            var media = ((p1+p2)/2); // calculando a média
+
+            if(p1===0 || p2===0 || media <= 5) {
+                alert("Que pena... Está reprovado!");
+            } else {
+                alert("Parabéns. foi aprovado!");
+            }
+       </script>
+    </body>
+
+</html>

@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="pt-br">
     
     <head>
@@ -13,17 +12,17 @@
     <body>
        <h1>Lógica de programação com Javascript</h1>
 
-       <div id="output"></div>
-
        <script>
-           var output = document.querySelector('#output');
 
-           var mensagem = '';
-           for(var i = 0; i<=100; i++){
-               mensagem += 'i:' + i + '<br>';
-           }
+            var p1 = prompt("Digite a nota da Prova 1: ");
+            p1 = parseFloat(p1);
 
-           output.innerHTML = mensagem;
+            var p2 = prompt("Agora digite a nota da Prova 2: ");
+            p2 = parseFloat(p2);
+
+            var media = ((p1+p2)/2); // calculando a média
+
+            alert(media > 5);
            
        </script>
     </body>
