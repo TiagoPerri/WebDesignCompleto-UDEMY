@@ -44,47 +44,58 @@
 
         <div class="stylediv">
             <div id="txtjs"></div>
-            <button class="stylebutton" onclick="calc('+')">+</button>
-            <button class="stylebutton" onclick="calc('-')">-</button>
-            <button class="stylebutton" onclick="calc('*')">*</button>
-            <button class="stylebutton" onclick="calc('/')">/</button>
+            <button class="stylebutton" onclick="iniciocalc('+')">+</button>
+            <button class="stylebutton" onclick="iniciocalc('-')">-</button>
+            <button class="stylebutton" onclick="iniciocalc('*')">*</button>
+            <button class="stylebutton" onclick="iniciocalc('/')">/</button>
         </div>
 
        <script>
 
-            var num = prompt("Digite um número");
-            num = parseFloat(num);
+            var n2 = prompt("Digite um número");
+            n2 = parseFloat(n2);
 
-            result();
+            result(n2);
 
-            function result(){
+            function iniciocalc(sinal){
+                var n1 = document.querySelector("#txtjs").textContent;
+                n1 = parseFloat(n1);
+
+                var n2 = prompt("Digite outro número")
+                n2 = parseFloat(n2);
+
+                var msg = calc(sinal,n1,n2);
+                result(msg);
+            }
+
+            function result(mensagem){
                 var txtjs = document.querySelector("#txtjs");
-                txtjs.innerHTML = num;
+                txtjs.innerHTML = mensagem;
             }            
 
-            function calc(sinal){
-                var num2 = prompt("Digite outro número");
-                num2 = parseFloat(num2);
+            function calc(sinal, n1, n2){
+
+                var numcalc = null;
 
                 switch(sinal){
                     case '+':
-                        num += num2;
-                        break;
+                       numcalc = (n1 + n2);
+                       break;
 
                     case '-':
-                        num -= num2;
-                        break;
+                       numcalc = (n1 - n2);
+                       break;
 
                     case '*':
-                        num *= num2;
-                        break;
+                       numcalc = (n1 * n2);
+                       break;
 
                     case '/':
-                        num /= num2;
-                        break;
+                       numcalc = (n1 / n2);
+                       break;
                 }
 
-                result();
+                return numcalc;
             }
 
        </script>

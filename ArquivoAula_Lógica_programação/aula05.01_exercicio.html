@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    
+    <head>
+        <title>Lógica de programação com Javascript</title> 
+        <meta charset="utf-8">
+        <meta name="author" content="Tiago-Perri"> 
+        <meta name="description" content="Treinamento básico HTML">
+        <meta name="keywords" content="html5,tech,yankton"> 
+        
+    </head>
+
+    <body>
+        <h1>Lógica de programação com Javascript</h1>
+
+        <button onclick="calcAreaAlert()">Calcular área do retangulo (alert)</button>
+        <button onclick="calcAreaOutput()">Calcular área do retangulo (Output)</button>
+ 
+        <div id="txtjs"></div>
+        
+ 
+        <script>
+            
+             function calcAreaAlert(){
+                    var altura = prompt("Digite a altura do retangulo");
+                    altura = parseFloat(altura);
+
+                    var largura = prompt("Digite a largura do retangulo");
+                    largura =  parseFloat(largura);
+
+                    try{
+                        var area = calcArea(altura, largura);
+                    }catch (e){
+                        area = e;
+                    }
+
+                    alert("Valor da área é: " + area);
+             }
+             
+             function calcAreaOutput(){
+                    var altura = prompt("Digite a altura do retangulo");
+                    altura = parseFloat(altura);
+
+                    var largura = prompt("Digite a largura do retangulo");
+                    largura =  parseFloat(largura);
+
+                    try{
+                        var area = calcArea(altura, largura);
+                    }catch (e){
+                        area = e;
+                    }
+
+                 document.querySelector("#txtjs").innerHTML = "Valor da área é: " + area;                
+             }
+
+             calcAreaAlert();
+ 
+             function calcArea(a,l){
+                 if(a === undefined || l === undefined){
+                     throw new Error("calcArea necessita de dois números");
+                 }
+
+                 if( isNaN(a) || isNaN(l) ){
+                     throw new Error("Apenas números");
+                 }
+                 return a*l;
+             }
+ 
+            
+        </script>
+    </body>
+
+</html>

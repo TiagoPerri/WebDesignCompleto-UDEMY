@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    
+    <head>
+        <title>Lógica de programação com Javascript</title> 
+        <meta charset="utf-8">
+        <meta name="author" content="Tiago-Perri"> 
+        <meta name="description" content="Treinamento básico HTML">
+        <meta name="keywords" content="html5,tech,yankton"> 
+
+        <style>
+            h2{
+                color: green;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                text-decoration: underline;
+            }
+        </style>
+        
+    </head>
+
+    <body>
+       <h1>Lógica de programação com Javascript</h1>
+
+       <div id="output"></div>
+
+       <script>
+
+            var produtos = [
+            {"nome": "Caneta", "preco": 2},
+            {"nome": "Lápis", "preco": 1.2},
+            {"nome": "Borracha", "preco": 0.5},
+            {"nome": "Caderno", "preco": 15},
+            {"nome": "Mochila", "preco": 70}
+            ];
+        
+            var msg = "";
+        
+            for(var i = 0; i < produtos.length; i++){
+                console.log(produtos[i].preco);
+            
+                msg += "<h2> Produto: "+ produtos[i].nome +"</h2>";
+                msg += "<p> Preço: R$ "+ produtos[i].preco +"</p><br>"
+            }
+        
+            document.querySelector('#output').innerHTML = msg;
+       </script>
+    </body>
+
+</html>

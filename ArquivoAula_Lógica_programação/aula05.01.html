@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    
+    <head>
+        <title>Lógica de programação com Javascript</title> 
+        <meta charset="utf-8">
+        <meta name="author" content="Tiago-Perri"> 
+        <meta name="description" content="Treinamento básico HTML">
+        <meta name="keywords" content="html5,tech,yankton"> 
+
+        <style>
+            .stylediv{
+                font-size: 15px;
+                text-align: center;
+                width: 20%;
+                margin: auto;
+                background-color: #ccc;
+            }
+
+            .stylebutton{
+                background-color: black;
+                color: white;
+                border: 2px solid red;
+                border-radius: 10px;
+                padding: 10px;
+            }
+
+            #txtjs{
+                background-color: green;
+                padding: 15px;
+                color: black;
+                width: 10%;
+                margin: auto;
+                font-size: 18px;
+                font-weight: bold;
+                margin-bottom: 10px;
+            }
+        </style>
+        
+    </head>
+
+    <body>
+       <h1>Lógica de programação com Javascript</h1>
+
+        <div class="stylediv">
+            <div id="txtjs"></div>
+            <button class="stylebutton" onclick="iniciocalc('+')">+</button>
+            <button class="stylebutton" onclick="iniciocalc('-')">-</button>
+            <button class="stylebutton" onclick="iniciocalc('*')">*</button>
+            <button class="stylebutton" onclick="iniciocalc('/')">/</button>
+        </div>
+
+       <script>
+
+            var n2 = prompt("Digite um número");
+            n2 = parseFloat(n2);
+
+            result(n2);
+
+            function iniciocalc(sinal){
+                var n1 = document.querySelector("#txtjs").textContent;
+                n1 = parseFloat(n1);
+
+                var n2 = prompt("Digite outro número")
+                n2 = parseFloat(n2);
+
+                try{
+                    var msg = calc(sinal,n1,n2);
+                }catch(e){
+                    alert(e);
+                    return;
+                }
+
+                result(msg);
+            }
+
+            function result(mensagem){
+                var txtjs = document.querySelector("#txtjs");
+                txtjs.innerHTML = mensagem;
+            }            
+
+            function calc(sinal, n1, n2){
+
+                if(sinal !== '+' && sinal !== '-' && sinal !== '*' && sinal !== '/'){
+                    throw new Error("Simbolo não válido, digite outro")
+                }
+
+                if( isNaN(n1) || isNaN(n2) ){
+                    throw new Error("Somente números são válidos!!!");
+                }
+
+                var numcalc = null;
+
+                switch(sinal){
+                    case '+':
+                       numcalc = (n1 + n2);
+                       break;
+
+                    case '-':
+                       numcalc = (n1 - n2);
+                       break;
+
+                    case '*':
+                       numcalc = (n1 * n2);
+                       break;
+
+                    case '/':
+                       numcalc = (n1 / n2);
+                       break;
+                }
+
+                return numcalc;
+            }
+
+       </script>
+    </body>
+
+</html>

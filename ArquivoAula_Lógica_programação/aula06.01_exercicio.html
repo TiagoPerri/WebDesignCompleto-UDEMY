@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    
+    <head>
+        <title>Lógica de programação com Javascript</title> 
+        <meta charset="utf-8">
+        <meta name="author" content="Tiago-Perri"> 
+        <meta name="description" content="Treinamento básico HTML">
+        <meta name="keywords" content="html5,tech,yankton"> 
+        
+    </head>
+
+    <body>
+       <h1>Lógica de programação com Javascript</h1>
+
+        <script>
+        
+            var dias = new Array('Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado');
+            
+            var hoje = new Date();
+            var diaSemana = hoje.getDay(); // retorna o dia da semana / 0 - domingo; 1 - segunda; ... 6 - sabado
+            
+            alert('Bem vindo, hoje é ' + dias[diaSemana]);
+            
+        </script>
+    </body>
+
+</html>

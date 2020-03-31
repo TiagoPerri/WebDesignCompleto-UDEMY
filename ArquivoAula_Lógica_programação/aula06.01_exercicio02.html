@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    
+    <head>
+        <title>Lógica de programação com Javascript</title> 
+        <meta charset="utf-8">
+        <meta name="author" content="Tiago-Perri"> 
+        <meta name="description" content="Treinamento básico HTML">
+        <meta name="keywords" content="html5,tech,yankton"> 
+        
+    </head>
+
+    <body>
+       <h1>Lógica de programação com Javascript</h1>
+
+       <script>
+           var numeros = new Array(1, 2, 3, 5, 2); //mostrar na tela a soma dos números pares da array acima
+        
+            var numpar = calcpar(numeros);
+            
+            alert('a soma dos números pares do Array é: ' + numpar);
+            
+            
+            function calcpar(arr){
+                var soma = 0;
+                for(var i = 0; i < arr.length; i++){
+                    console.log(i);
+                    console.log(arr[i]);
+
+                    if( !isNaN(arr[i]) && arr[i] % 2 === 0){
+                        soma += arr[i];
+                    }
+                }
+                return soma;
+            }
+                   
+       </script>
+    </body>
+
+</html>

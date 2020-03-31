@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    
+    <head>
+        <title>Lógica de programação com Javascript</title> 
+        <meta charset="utf-8">
+        <meta name="author" content="Tiago-Perri"> 
+        <meta name="description" content="Treinamento básico HTML">
+        <meta name="keywords" content="html5,tech,yankton"> 
+        
+    </head>
+
+    <body>
+       <h1>Lógica de programação com Javascript</h1>
+
+       <div id="output"></div>
+
+       <script>
+
+            var produtos = new Array('Caneta', 'Lápis', 'Mochila', 'Borracha', 'Caderno', 'Apontador');
+        
+            produtos.push('Tesoura', 'Cartolina')
+            
+            var output = document.querySelector('#output');
+            var msg = '';
+            
+            for (var i = 0; i < produtos.length; i++){
+                msg += 'produto ' + (i + 1) + ': '+ produtos[i] +' <br>';            
+            }
+            
+            output.innerHTML = msg;
+
+       </script>
+    </body>
+
+</html>
