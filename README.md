@@ -3,8 +3,9 @@ Repositório para subir todas as atividades realizadas durante os estudos no cur
 
 Conteúdo do curso inclui:
 - Conceitos avançados de HTML; 
-- Conceitos avançados de CSS;
-- Conceitos iniciais de Javascript;
+- Conceitos do básico ao intermediário de CSS;
+- Treinamento em Lógica de Programação;
+- Conceitos básicos de Javascript;
 - Conceitos avançados sobre semântica e acessibilidade;
 - Introdução ao SEO (otimização para sites de busca);
 - Conceitos avançados sobre sites RESPONSIVOS;
