@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    
+    <head>
+        <title>Introdução ao Javascript</title> 
+        <meta charset="utf-8">
+        <meta name="author" content="Tiago-Perri"> 
+        <meta name="description" content="Treinamento básico HTML">
+        <meta name="keywords" content="html5,tech,yankton"> 
+        
+    </head>
+
+    <body>
+       <h1>Introdução ao Javascript</h1>
+
+       <input type="text" id="txtNome" placeholder="Digite seu nome aqui" value=""> <!--Utilizei o placeholder como forma de deixar mais fácil a acessibilidade da caixa de texto ao usuário-->
+
+       <button onclick="escreve()">Clique aqui!</button>
+       <div id="msg"></div>
+       
+       <script>
+           
+           var txtNome2 = document.querySelector('#txtNome');
+
+           function escreve(){
+               var nome = txtNome2.value; // sempre que for FORM, utilizar o value ao invés de textcontent ou innerHTML                
+               document.querySelector('#msg').innerHTML = "Bem-vindo, <b>" + nome + "</b>";
+           }
+        
+       </script>
+       
+    </body>
+
+</html>

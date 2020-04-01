@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    
+    <head>
+        <title>Introdução ao Javascript</title> 
+        <meta charset="utf-8">
+        <meta name="author" content="Tiago-Perri"> 
+        <meta name="description" content="Treinamento básico HTML">
+        <meta name="keywords" content="html5,tech,yankton"> 
+        
+    </head>
+
+    <body>
+       <h1>Introdução ao Javascript</h1>
+
+       <p>Parágrafo 1</p>
+       <p>Parágrafo 2</p>
+       <p>Parágrafo 3</p>
+       <p>Parágrafo 4</p>
+       <p>Parágrafo 5</p>
+
+       <script>
+
+            (function(){
+                'use strict';
+                var paragrafos = document.querySelectorAll('p');
+                
+                console.log(paragrafos);
+                var x = 0;
+                while(paragrafos[x]){
+                    paragrafos[x].innerHTML = 'Esta página foi hackeada por <b> T.P.G.O. </b> >:(';
+                    x++;
+                }   
+
+                document.querySelector('h1').textContent = 'Esta página foi hackeada por T.P.G.O. >:('
+            })()
+
+       </script>
+    </body>
+
+</html>

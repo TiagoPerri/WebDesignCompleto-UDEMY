@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    
+    <head>
+        <title>Introdução ao Javascript</title> 
+        <meta charset="utf-8">
+        <meta name="author" content="Tiago-Perri"> 
+        <meta name="description" content="Treinamento básico HTML">
+        <meta name="keywords" content="html5,tech,yankton"> 
+
+        <script>
+            (function(){ //IIFE - Immediately-invoked function expression, funcoes que se auto executam
+                
+                function calcMedia(){                    
+                    var total = 0;
+                    var qtd = arguments.length;
+
+                    var x = 0; // inicialização da variavel
+                    while(typeof arguments[x] === 'number'){
+                        total += arguments[x];
+                        x++; // incremento
+                    }                    
+                    
+                    return total / qtd;
+                }
+
+                var media1 = calcMedia(2,3);
+                var media2 = calcMedia(4, 0, 10, 10);
+                
+                console.log('media1: ', media1);
+                console.log('media2: ', media2); // resultados irão ser mostrados no console
+            })()
+            
+        </script>
+        
+    </head>
+    <body>
+        <h1>Introdução ao Javascript</h1>      
+    </body>
+</html>

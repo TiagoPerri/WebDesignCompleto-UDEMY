@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    
+    <head>
+        <title>Introdução ao Javascript</title> 
+        <meta charset="utf-8">
+        <meta name="author" content="Tiago-Perri"> 
+        <meta name="description" content="Treinamento básico HTML">
+        <meta name="keywords" content="html5,tech,yankton"> 
+        
+    </head>
+
+    <body>
+       <h1>Introdução ao Javascript</h1>
+
+       <div id="msg"></div>
+
+       <script>
+            (function(){
+                var nome = prompt('Qual seu nome? Digite-o aqui: ');
+                document.querySelector('#msg').textContent = "Bem-vindo, " + nome;
+                
+            })()
+
+       </script>
+    </body>
+
+</html>

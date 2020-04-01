@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    
+    <head>
+        <title>Introdução ao Javascript</title> 
+        <meta charset="utf-8">
+        <meta name="author" content="Tiago-Perri"> 
+        <meta name="description" content="Treinamento básico HTML">
+        <meta name="keywords" content="html5,tech,yankton"> 
+        
+    </head>
+
+    <body>
+       <h1>Introdução ao Javascript</h1>
+
+        <main class="cmain" id="idmain">
+            <h2>Subtítulo</h2>
+            <p id="pmain" class="pmain">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+        </main> 
+    
+        <section class="csection" id="idsection">
+            <h3>Subtítulo</h3>
+            <p class="paragrafos">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+            <p class="paragrafos">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+        </section>
+
+       <script>
+           document.getElementById( 'pmain' ).textContent = 'Texto alterado pelo .textcontent associado com o getElementById';
+
+           document.getElementsByClassName('paragrafos')[0].textContent = 'Texto alterado pelo getElementsByClassName';
+           document.getElementsByClassName('paragrafos')[1].textContent = 'Não podemos esquecer de passar o índice';
+
+           document.querySelector('#idmain h2').textContent = 'Texto alterado com o .querySelector'
+           
+       </script>
+    </body>
+
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    
+    <head>
+        <title>Introdução ao Javascript</title> 
+        <meta charset="utf-8">
+        <meta name="author" content="Tiago-Perri"> 
+        <meta name="description" content="Treinamento básico HTML">
+        <meta name="keywords" content="html5,tech,yankton"> 
+        
+    </head>
+
+    <body>
+       <h1>Introdução ao Javascript</h1>
+
+       <input type="text" id="txtNome" value="">
+       <p>Utilizando a propriedade readOnly no mundo JS</p>
+       
+       
+       <!-- .value .textcontent .innerHTML
+        Define um novo valor ou recupera um valor atual -->
+        
+        <script>
+            
+            var $txt = document.querySelector('txtNome'); // $ significa - atribuindo a var uma referencia do DOM
+            var nome = "Tiago ";
+            var sobrenome = "Perri Gonçalves de Oliveira";
+            
+            document.querySelector('#txtNome').value = nome + sobrenome;
+            document.querySelector('#txtNome').readOnly = true; // somente leitura, se difere do html (readonly), no JS é readOnly
+            
+        </script>
+    </body>
+
+</html>

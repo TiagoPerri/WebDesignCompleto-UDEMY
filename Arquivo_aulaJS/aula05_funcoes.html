@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    
+    <head>
+        <title>Introdução ao Javascript</title> 
+        <meta charset="utf-8">
+        <meta name="author" content="Tiago-Perri"> 
+        <meta name="description" content="Treinamento básico HTML">
+        <meta name="keywords" content="html5,tech,yankton"> 
+
+        <script>
+
+            function somar(n1, n2) { //função literal, modo padrão de criar funções
+                return n1 + n2;
+            }
+            
+            var soma = somar(10, 20);
+            console.log('Resultado: ', soma);
+            
+            somar.teste = 'propriedade da função'; // vinculando uma função a um objeto
+            console.log(somar.teste);
+            
+            var teste = function(f){
+                f();
+            };
+            
+            teste(function(){
+                console.log('função passada por parâmetro'); // uma função que é passada por parametro de outra função
+            });
+            
+            console.log('------');
+            var x = 0; // escopo global
+            var y;
+            
+            function mostraX(){
+                var x = 10; //escopo local, var locais so existem dentro das proprias funçoes
+                var y = 20;
+                console.log("mostra x (var locais): " , x);
+                console.log("mostra y (var locais): " , y);
+            }
+            mostraX()
+            
+            console.log("mostra x (var globais): " , x);
+            console.log("mostra y (var globais): " , y);
+            
+            (function(){ //IIFE - Immediately-invoked function expression, funcoes que se auto executam
+                'use strict'; // uma boa prática de programação para se utilizar DENTRO dos escopos locais
+                var varboolean = false; // usada para não poluirmos o escopo global desnecessariamente
+                console.log(varboolean);
+                
+                function somar(){
+                    console.log(arguments);
+                    var result = 0;
+                    var x = 0;
+                    
+                    while(arguments[x]){ // representa todos os valores passados por parametros
+                        //result = result + arguments[x];
+                        result += arguments[x];
+                        //x = x + 1;
+                        x++;
+                    }
+                    console.log('result: ', result);
+                }
+                
+                somar(20, 20, 10, 30, 5, 15);
+            })();
+               
+        </script>
+        
+    </head>
+
+    <body>
+       <h1>Introdução ao Javascript</h1>
+    </body>
+
+</html>

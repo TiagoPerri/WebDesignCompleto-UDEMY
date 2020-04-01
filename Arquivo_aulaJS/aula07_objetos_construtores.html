@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    
+    <head>
+        <title>Introdução ao Javascript</title> 
+        <meta charset="utf-8">
+        <meta name="author" content="Tiago-Perri"> 
+        <meta name="description" content="Treinamento básico HTML">
+        <meta name="keywords" content="html5,tech,yankton"> 
+
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.css">
+
+        <script src="beluga.js"></script>
+        
+    </head>
+
+    <body>
+        <div class="container">
+            <h1>Introdução ao Javascript</h1>
+        </div>
+        
+       <script>
+            var Caneta = (function(window){
+                'use strict';
+                console.log(this);
+
+                function _caneta(preco, cor){
+        
+                    var color = cor || 'preta';
+            
+                    this.preco = preco || 1;                
+                    this.mudarCor = function(cor){
+                        if(cor !== 'vermelha' && cor !== 'azul' && cor !== 'preta'){
+                            return;
+                        }
+                        color = cor;
+                    }
+
+                    this.pegaCor = function(){
+                        return color;
+                    }
+                }
+
+                return _caneta;
+                
+            })(window)
+        
+       </script>
+    </body>
+
+</html>
