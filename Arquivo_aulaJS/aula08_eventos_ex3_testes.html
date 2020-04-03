@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    
+    <head>
+        <title>Introdução ao Javascript</title> 
+        <meta charset="utf-8">
+        <meta name="author" content="Tiago-Perri"> 
+        <meta name="description" content="Treinamento básico HTML">
+        <meta name="keywords" content="html5,tech,yankton"> 
+
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.css">
+        
+    </head>
+
+    <body>
+        <div class="container">
+            <h1>Conhecendo eventos keypress, keyup e keydown</h1>
+
+            <textarea name="msg" id="msg" cols="50" rows="10"></textarea>
+        </div>
+        
+       <script>
+           (function(){
+            'use strict'
+
+            var $msg = document.getElementById('msg');
+
+            $msg.addEventListener('keypress', function keypress(e){
+                console.log('keypress ', this.value);
+            })
+
+            $msg.addEventListener('keyup', function keyup(e){
+                console.log('keyup ', this.value);
+            })
+
+            $msg.addEventListener('keydown', function keydown(e){
+                console.log('keydown ', this.value);
+            })
+
+            $msg.addEventListener('input', function input(e){
+                console.log('input ', this.value);
+            })
+               
+            })()
+       </script>
+    </body>
+
+</html>

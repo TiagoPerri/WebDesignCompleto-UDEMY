@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    
+    <head>
+        <title>Introdução ao Javascript</title> 
+        <meta charset="utf-8">
+        <meta name="author" content="Tiago-Perri"> 
+        <meta name="description" content="Treinamento básico HTML">
+        <meta name="keywords" content="html5,tech,yankton"> 
+
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.css">
+
+        <script src="beluga.js"></script>
+        
+    </head>
+
+    <body>
+        <div class="container">
+            <h1>Trabalhando com Javascript e textarea</h1>
+
+            <textarea name="msg" id="msg" cols="50" rows="10" maxlength="100"></textarea>
+            <div id="restadiv" style="display: none;">
+                Restam <span id="resta"></span> caracteres
+            </div>
+        </div>
+        
+       <script>
+           (function(){
+            'use strict'
+
+            var $resta = document.getElementById('resta');
+            var $restadiv = document.getElementById('restadiv');
+            var $msg = document.getElementById('msg');
+
+            var maxima = $msg.maxLength;
+
+            function mostracontainer(){
+                $restadiv.style.display = 'block';
+            }
+
+            mostracontainer();
+
+            charfaltantes(maxima);
+
+            $msg.addEventListener('input', function verificatamanho(e){
+                
+                var numchar = this.value.length;
+                var charResto = (parseInt(maxima) - parseInt(numchar));
+                
+                charfaltantes(charResto);
+            })
+            
+            function charfaltantes(n){
+                $resta.textContent = n;
+            }
+               
+            })()
+       </script>
+    </body>
+
+</html>

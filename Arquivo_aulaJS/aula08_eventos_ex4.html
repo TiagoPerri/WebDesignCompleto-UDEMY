@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    
+    <head>
+        <title>Introdução ao Javascript</title> 
+        <meta charset="utf-8">
+        <meta name="author" content="Tiago-Perri"> 
+        <meta name="description" content="Treinamento básico HTML">
+        <meta name="keywords" content="html5,tech,yankton"> 
+
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.css">
+        
+    </head>
+
+    <body>
+        <div class="container">
+            <h1>Javascript - Checkbox</h1>
+
+            <form action="#" method="POST">
+                <textarea name="contrato" cols="50" rows="10" readonly>Contrato social</textarea> <br>
+
+                <label>
+                    <input type="checkbox" id="chk" checked> Li e aceito
+                </label>
+                <br>
+
+                <input type="submit" value="Continuar" id="btn"> 
+            </form>
+        </div>
+        
+       <script>
+           (function(){
+               var $btn = document.getElementById('btn');
+               var $chk = document.getElementById('chk');
+
+               mostrabtn();
+
+               $chk.addEventListener('change', function(){
+                   
+                  /* if(this.checked){
+                       $btn.disabled = false;
+                   } else{
+                       $btn.disabled = true
+                   } */
+                
+                   mostrabtn();
+               });
+
+               function mostrabtn(){
+                    $btn.disabled = !$chk.checked;
+               }
+           })()
+       </script>
+    </body>
+
+</html>

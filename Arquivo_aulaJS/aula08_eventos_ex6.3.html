@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    
+    <head>
+        <title>Introdução ao Javascript</title> 
+        <meta charset="utf-8">
+        <meta name="author" content="Tiago-Perri"> 
+        <meta name="description" content="Treinamento básico HTML">
+        <meta name="keywords" content="html5,tech,yankton"> 
+
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.css">
+
+        <style>
+            .done{
+                text-decoration: line-through;
+                color: #555;
+            }
+       </style>
+        
+    </head>
+
+    <body>
+        <div class="container">
+            <h1>Lista de tarefas - Parte 3</h1>
+
+            <input type="text" id="txtTask">
+            <button id="btn">Adicionar tarefa</button>       
+            
+            <ul>
+                <li>Estudar Javascript - DOM</li>
+                <li>Estudar eventos em Javascript</li>
+                <li>Jogar Video-game</li>
+            </ul>
+
+        </div>
+        
+       <script>
+           (function(){
+                'use strict';
+        
+                var $ul = document.querySelector('ul');
+                var $lis = $ul.querySelectorAll('li');
+                var $txtTask = document.querySelector('#txtTask');
+                var $btn = document.querySelector('#btn');
+                
+                $btn.addEventListener('click', addTask);
+                $txtTask.addEventListener('keyup', function(e){
+                    if(e.keyCode === 13) {
+                        addTask();
+                    }
+                });
+                
+                for(var i = 0; i < $lis.length; i++){
+                    $lis[i].addEventListener('click', toogleDone)
+                }
+                
+                function toogleDone(){
+                    this.classList.toggle('done');
+                }
+                
+                function addTask(){
+                    var task = '<li>' + $txtTask.value + '</li>';
+                    $ul.innerHTML += task;
+                    
+                    $txtTask.value = '';
+                    $txtTask.focus();
+                }       
+            })()
+       </script>
+    </body>
+
+</html>

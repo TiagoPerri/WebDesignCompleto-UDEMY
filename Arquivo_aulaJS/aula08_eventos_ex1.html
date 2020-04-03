@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    
+    <head>
+        <title>Introdução ao Javascript</title> 
+        <meta charset="utf-8">
+        <meta name="author" content="Tiago-Perri"> 
+        <meta name="description" content="Treinamento básico HTML">
+        <meta name="keywords" content="html5,tech,yankton"> 
+
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.css">
+        
+    </head>
+
+    <body>
+        <div id="container">
+            <h1>Javascript - Validar Formulários</h1>
+
+            <form action="#">
+                <label for="txtuser" style="display: block; letter-spacing: 1px;"> Usuário
+                    <input type="text" id="txtuser" name="user">
+                </label>
+
+                <label for="txtsenha" style="margin-top: 10px; letter-spacing: 2.9px;"> Senha
+                    <input type="password" id="txtsenha" name="senha">
+                </label>
+                <button type="button" id="btn">Enviar</button>
+            
+            </form>
+        </div>
+
+        <script>
+
+            (function(){
+                'use strict'
+
+                var $txtuser = document.getElementById('txtuser');
+                var $txtsenha = document.getElementById('txtsenha');
+                var $btn = document.getElementById('btn');
+
+                $btn.addEventListener('click', function(){
+
+                    if($txtuser.value === '' || $txtsenha.value === ''){
+                        alert('preencha todos os campos');
+                    }
+                })
+
+            })()
+
+        </script>
+    </body>
+</html>
