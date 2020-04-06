@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    
+    <head>
+        <title>Introdução ao Javascript</title> 
+        <meta charset="utf-8">
+        <meta name="author" content="Tiago-Perri"> 
+        <meta name="description" content="Treinamento básico HTML">
+        <meta name="keywords" content="html5,tech,yankton"> 
+
+        <script src=beluga.js></script>
+
+        <script>                    
+            (function(){
+                window.addEventListener('load', init);
+
+                function init(){
+                    var n = sortear(5) + 1;   
+                    document.querySelector('body').style.backgroundImage = "url(images/"+  n +".jpg)";
+                }
+            })()
+        </script>
+        
+    </head>
+    <body>
+        <h1>Javascript - Aula 12 - desafio</h1> 
+    </body>
+</html>

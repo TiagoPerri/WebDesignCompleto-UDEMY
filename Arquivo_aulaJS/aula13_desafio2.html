@@ -1,0 +1,51 @@
+<<!DOCTYPE html>
+<html lang="pt-br">
+    
+    <head>
+        <title>Introdução ao Javascript</title> 
+        <meta charset="utf-8">
+        <meta name="author" content="Tiago-Perri"> 
+        <meta name="description" content="Treinamento básico HTML">
+        <meta name="keywords" content="html5,tech,yankton"> 
+
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.css">
+        
+        <style>
+            .destaque{
+                padding: 15px;
+                display: inline-block;
+                background: yellow;
+            }
+        </style>
+
+    </head>
+    <body>
+        <div class="container">
+            <h1>aula 13 - Desafio 2</h1>
+       
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem dolores veniam perspiciatis vel cum reprehenderit tempora laudantium, harum aspernatur, neque consequuntur aperiam, optio consectetur. Consectetur quod iure perspiciatis commodi eligendi!</p>
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem dolores veniam perspiciatis vel cum reprehenderit tempora laudantium, harum aspernatur, neque consequuntur aperiam, optio consectetur. Consectetur quod iure perspiciatis commodi eligendi!</p>
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem dolores veniam perspiciatis vel cum reprehenderit tempora laudantium, harum aspernatur, neque consequuntur aperiam, optio consectetur. Consectetur quod iure perspiciatis commodi eligendi!</p>
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem dolores veniam perspiciatis vel cum reprehenderit tempora laudantium, harum aspernatur, neque consequuntur aperiam, optio consectetur. Consectetur quod iure perspiciatis commodi eligendi!</p>
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem dolores veniam perspiciatis vel cum reprehenderit tempora laudantium, harum aspernatur, neque consequuntur aperiam, optio consectetur. Consectetur quod iure perspiciatis commodi eligendi!</p>
+           <p>Lorem ipsum dolor JAVASCRIPT sit amet, consectetur adipisicing elit. Voluptatem dolores veniam perspiciatis vel cum reprehenderit tempora laudantium, harum aspernatur, neque consequuntur aperiam, optio consectetur. Consectetur quod iure perspiciatis commodi eligendi!</p>
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem dolores veniam perspiciatis vel cum reprehenderit tempora laudantium, harum aspernatur, neque consequuntur aperiam, optio consectetur. Consectetur quod iure perspiciatis commodi eligendi!</p>
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem dolores veniam perspiciatis vel cum reprehenderit tempora laudantium, harum aspernatur, neque consequuntur aperiam, optio consectetur. Consectetur quod iure perspiciatis commodi eligendi!</p>
+           <p>Lorem ipsum dolor sit JAVASCRIPT amet, consectetur adipisicing elit. Voluptatem dolores veniam perspiciatis vel cum reprehenderit tempora laudantium, harum aspernatur, neque consequuntur aperiam, optio consectetur. Consectetur quod iure perspiciatis commodi eligendi!</p>
+           <p>Lorem ipsum </p>
+
+        </div>
+        
+        <script>
+        
+            var paragrafos = document.querySelectorAll('p');
+            
+            for (var i = 0; i < paragrafos.length; i++){
+                var temJS = paragrafos[i].textContent.toLowerCase().indexOf('javascript') >= 0;
+                paragrafos[i].className = temJS ? 'destaque' : '';
+            }     
+        </script>
+        
+    </body>
+</html>

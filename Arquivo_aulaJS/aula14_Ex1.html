@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    
+    <head>
+        <title>Introdução ao Javascript</title> 
+        <meta charset="utf-8">
+        <meta name="author" content="Tiago-Perri"> 
+        <meta name="description" content="Treinamento básico HTML">
+        <meta name="keywords" content="html5,tech,yankton"> 
+
+        <script>
+            
+            (function(){
+                var dataAtual = new Date();
+                dataAtual.setHours(0);
+                dataAtual.setMinutes(0);
+                dataAtual.setSeconds(0);
+                dataAtual.setMilliseconds(0);
+                var anoAtual = dataAtual.getFullYear();                
+                        
+                var dataNiver = new Date(anoAtual, 11, 22);
+                
+                var dataAtualTS = dataAtual.getTime();
+                var dataNiverTS = dataNiver.getTime();
+                
+                if (dataNiverTS === dataAtualTS){
+                    alert('Eiii, Parabéns!! É seu aniversário');
+                    return;
+                }
+                if(dataNiverTS < dataAtualTS){
+                    dataNiver.setFullYear(++anoAtual);
+                    dataNiverTS = dataNiver.getTime();
+                }
+                
+                const UM_DIA_TS  = 24 * 60 * 60 * 1000;
+                var diferenca = dataNiverTS - dataAtualTS;
+                console.log('Faltam '+ (diferenca / UM_DIA_TS) + ' dias para seu aniversário');            
+                
+            })()
+        </script>
+        
+    </head>
+    <body>
+        <h1>Aula 14 - Date</h1>      
+        <p>Abra o console !!</p>
+    </body>
+</html>

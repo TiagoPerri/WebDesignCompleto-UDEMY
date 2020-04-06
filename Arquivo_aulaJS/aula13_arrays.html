@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    
+    <head>
+        <title>Introdução ao Javascript</title> 
+        <meta charset="utf-8">
+        <meta name="author" content="Tiago-Perri"> 
+        <meta name="description" content="Treinamento básico HTML">
+        <meta name="keywords" content="html5,tech,yankton"> 
+        
+    </head>
+    <body>
+        <h1>Javascript - Arrays</h1>
+        <p>Abra o console !!</p>
+
+        <script>
+            
+            var arr = ['8', 20, 3, 90, 5, 'Tpgo', 20, "50"];
+            
+            var sohNumeros = arr.every( function(el){
+                return typeof el === 'number';                
+            } );
+            console.log('Method EVERY: '+ sohNumeros);
+            
+            var aoMenosUmNumero = arr.some( function(el){
+                return typeof el === 'number';                
+            } );
+            console.log('Method SOME: '+ aoMenosUmNumero);
+            
+            var numeros = arr.filter(function(el, i, arr){
+                return typeof el === 'number';
+            });
+            console.log('Method FILTER: '+ numeros)
+            
+            arr.forEach(function(el, i, arr){
+                console.log('elemento = ', el, '  |  índice= ', i, '  |  i - ', arr.toString());
+            })
+            
+            var posicaoStr1 = arr.indexOf(20, 5);
+            console.log('Method indexOf: ', posicaoStr1);
+            
+            var posicaoStr2 = arr.lastIndexOf(20, 5);
+            console.log('Method lastIndexOf: ', posicaoStr2);
+            
+            console.log('Method MAP: ' + numeros);
+            numeros = numeros.map(function(el, i, arr){
+                return el * i;
+            });            
+            console.log('Method MAP: ' + numeros);
+            
+            var arr2 = arr.concat(numeros, 'Salve', 'arr2', 100);
+            console.log('Method CONCAT: ' + arr2);
+            
+            var str = arr2.join(' -- ');
+            console.log('Method JOIN: ' +str);
+            
+            arr.push('novo', 'item');
+            console.log('Method PUSH: ' +arr);
+            
+            var ultimoItem = arr.pop();
+            console.log('Method POP: ' +ultimoItem);
+            console.log('Method POP: ' +arr);
+            
+            var primeiroItem = arr.shift();
+            console.log('Method SHIFT: ' + typeof primeiroItem);
+            
+            arr.unshift(true, false, 'unshift')
+            console.log('Method UNSHIFT: ' + arr);
+            
+            numeros.shift();
+            var somaDeArr = numeros.reduce(function(anterior, atual, i){
+                console.log('Method REDUCE: anterior', anterior, '  |  atual', atual, '  |  i', i)
+                return anterior + atual + i;
+            }, 10);
+            console.log('Method REDUCE: ', numeros);
+            console.log('Method REDUCE: ', somaDeArr);    
+            
+            var testeReduce = ['1', '2', '3', '4', '5'].reduceRight(function(i, a){
+                return i + a;
+            });
+            console.log(testeReduce);
+            
+            var arr = [10,20,30];
+            arr.reverse()
+            console.log(arr);
+
+            console.log('Method SLICE: ');
+            console.log( arr2.slice(2,5));
+            
+            console.log('------')
+            console.log(arr2)
+            var arr3 = arr2.splice('Method SPLICE: ', 2, 3, 'limao', 'melao');
+            console.log(arr2);            
+            console.log(arr3);
+
+        </script>
+    </body>
+</html>

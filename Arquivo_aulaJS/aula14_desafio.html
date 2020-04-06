@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    
+    <head>
+        <title>Introdução ao Javascript</title> 
+        <meta charset="utf-8">
+        <meta name="author" content="Tiago-Perri"> 
+        <meta name="description" content="Treinamento básico HTML">
+        <meta name="keywords" content="html5,tech,yankton"> 
+
+        <script>
+            
+            (function(){
+                var data = new Date();
+                
+                function formatDate(data){ 
+                    var dia = data.getDate() < 10 ? '0' + data.getDate() : data.getDate();
+                    // ? (SE) : (SENAO)
+                
+                    var mes = data.getMonth() + 1;
+                    mes = mes < 10 ? '0' + mes : mes;
+                    return dia + '/' + mes + '/' + data.getFullYear();
+                }  
+                alert(formatDate(data));
+            })()    
+        </script>
+        
+    </head>
+    <body>
+        <h1>Javascript - aula 14 - Desafio</h1>       
+    </body>
+</html>

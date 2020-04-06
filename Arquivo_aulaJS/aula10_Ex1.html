@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    
+    <head>
+        <title>Introdução ao Javascript</title> 
+        <meta charset="utf-8">
+        <meta name="author" content="Tiago-Perri"> 
+        <meta name="description" content="Treinamento básico HTML">
+        <meta name="keywords" content="html5,tech,yankton"> 
+
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.css">
+        
+        <script>                    
+            var nome = "Tiago Perri Gonçalves de Oliveira";
+            
+            var nomeFormatado = formatarNome(nome);
+
+            function formatarNome(nome){
+                var posicaoUltimoEspaco = nome.lastIndexOf(' ');
+                if(posicaoUltimoEspaco <= 0) {
+                    return nome;
+                } 
+
+                var ultimoNome = nome.slice(posicaoUltimoEspaco + 1);
+                console.log('último nome: ', ultimoNome);
+
+                var primeiroNome = nome.slice(0, posicaoUltimoEspaco);
+                console.log('posição do último espaço: ', posicaoUltimoEspaco);
+                
+                return ultimoNome +', ' + primeiroNome;
+
+            }
+                console.log(nomeFormatado);
+        </script>
+        
+    </head>
+    <body>
+        <h1>Strings - Javascript</h1>
+        <p>Abra o console !!</p>
+        
+    </body>
+</html>

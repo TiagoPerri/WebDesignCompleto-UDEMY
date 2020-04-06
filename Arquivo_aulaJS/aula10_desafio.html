@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    
+    <head>
+        <title>Introdução ao Javascript</title> 
+        <meta charset="utf-8">
+        <meta name="author" content="Tiago-Perri"> 
+        <meta name="description" content="Treinamento básico HTML">
+        <meta name="keywords" content="html5,tech,yankton"> 
+
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.css">
+                
+        <script>                    
+            (function(){
+                window.addEventListener('load', init);
+
+                function init(){
+                    var $paragrafos = document.querySelectorAll('p');
+
+                    var x = 0;
+                    while($paragrafos[x]){
+                        $paragrafos[x].innerHTML = formatarTexto($paragrafos[x].innerHTML);
+                        x++;
+                    }
+                }
+
+                function formatarTexto(texto){
+                    var numeroMaximoCaracteres = 50;
+                    if(texto.length <= numeroMaximoCaracteres) {
+                        return texto;
+                    }
+                    var subTexto = texto.slice(0, numeroMaximoCaracteres);
+                    return subTexto + '...';
+                }
+            })()
+        </script>
+        
+    </head>
+
+    <body>
+        <h1>Strings - Desafio</h1> 
+        
+        <p>Mussum Ipsum, <b> cacilds vidis litro abertis. </b>Diuretics paradis num copo é motivis de denguis. In elementis mé pra quem é amistosis quis leo. Nullam volutpat risus nec leo commodo, ut interdum diam laoreet. Sed non consequat odio. Praesent malesuada urna nisi, quis volutpat erat hendrerit non. Nam vulputate dapibus.</p>
+        
+        <p>Mussum Ipsum, cacilds vidis litro abertis. Nullam volutpat risus nec leo commodo, ut interdum diam laoreet. Sed non consequat odio. Delegadis gente finis, bibendum egestas augue arcu ut est. A ordem dos tratores não altera o pão duris. Todo mundo vê os porris que eu tomo, mas ninguém vê os tombis que eu levo!</p>
+
+        <p>Mussum Ipsum, cacilds vidis litro abertis.</p> 
+    </body>
+</html>
