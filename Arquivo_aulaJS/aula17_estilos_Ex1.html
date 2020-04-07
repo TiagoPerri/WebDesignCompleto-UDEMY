@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    
+    <head>
+        <title>Introdução ao Javascript</title> 
+        <meta charset="utf-8">
+        <meta name="author" content="Tiago-Perri"> 
+        <meta name="description" content="Treinamento básico HTML">
+        <meta name="keywords" content="html5,tech,yankton"> 
+
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.css">
+
+        <style type="text/css">
+        
+            .teste{
+                background: #ff0000;
+            }
+
+	    </style>
+        
+    </head>
+    <body>
+        <h1>Javascript - aula 17 - Ex 1</h1>
+        
+        <div class="teste">apenas um teste</div>
+        
+        <p>Casamentiss faiz malandris se pirulitá. Praesent malesuada urna nisi, quis volutpat erat hendrerit non. Nam vulputate dapibus. Aenean aliquam molestie leo, vitae iaculis nisl. Pra lá , depois divoltis porris, paradis.</p>
+        <p>Casamentiss faiz malandris se pirulitá. Praesent malesuada urna nisi, quis volutpat erat hendrerit non. Nam vulputate dapibus. Aenean aliquam molestie leo, vitae iaculis nisl. Pra lá , depois divoltis porris, paradis.</p>
+        <p>Casamentiss faiz malandris se pirulitá. Praesent malesuada urna nisi, quis volutpat erat hendrerit non. Nam vulputate dapibus. Aenean aliquam molestie leo, vitae iaculis nisl. Pra lá , depois divoltis porris, paradis.</p>
+        <p>Casamentiss faiz malandris se pirulitá. Praesent malesuada urna nisi, quis volutpat erat hendrerit non. Nam vulputate dapibus. Aenean aliquam molestie leo, vitae iaculis nisl. Pra lá , depois divoltis porris, paradis.</p>
+        <p>Casamentiss faiz malandris se pirulitá. Praesent malesuada urna nisi, quis volutpat erat hendrerit non. Nam vulputate dapibus. Aenean aliquam molestie leo, vitae iaculis nisl. Pra lá , depois divoltis porris, paradis.</p>
+        <p>Casamentiss faiz malandris se pirulitá. Praesent malesuada urna nisi, quis volutpat erat hendrerit non. Nam vulputate dapibus. Aenean aliquam molestie leo, vitae iaculis nisl. Pra lá , depois divoltis porris, paradis.</p>
+        <p>Casamentiss faiz malandris se pirulitá. Praesent malesuada urna nisi, quis volutpat erat hendrerit non. Nam vulputate dapibus. Aenean aliquam molestie leo, vitae iaculis nisl. Pra lá , depois divoltis porris, paradis.</p>
+        <p>Casamentiss faiz malandris se pirulitá. Praesent malesuada urna nisi, quis volutpat erat hendrerit non. Nam vulputate dapibus. Aenean aliquam molestie leo, vitae iaculis nisl. Pra lá , depois divoltis porris, paradis.</p>
+        <p>Casamentiss faiz malandris se pirulitá. Praesent malesuada urna nisi, quis volutpat erat hendrerit non. Nam vulputate dapibus. Aenean aliquam molestie leo, vitae iaculis nisl. Pra lá , depois divoltis porris, paradis.</p>
+        <p>Casamentiss faiz malandris se pirulitá. Praesent malesuada urna nisi, quis volutpat erat hendrerit non. Nam vulputate dapibus. Aenean aliquam molestie leo, vitae iaculis nisl. Pra lá , depois divoltis porris, paradis.</p>
+        <p>Casamentiss faiz malandris se pirulitá. Praesent malesuada urna nisi, quis volutpat erat hendrerit non. Nam vulputate dapibus. Aenean aliquam molestie leo, vitae iaculis nisl. Pra lá , depois divoltis porris, paradis.</p>
+        <p>Casamentiss faiz malandris se pirulitá. Praesent malesuada urna nisi, quis volutpat erat hendrerit non. Nam vulputate dapibus. Aenean aliquam molestie leo, vitae iaculis nisl. Pra lá , depois divoltis porris, paradis.</p>
+        
+        <div class="teste2">teste 2</div>
+        
+        <script>
+        
+            var $teste = document.querySelector('.teste');
+            console.log('bg: ', $teste.style.background);
+            
+            console.log('computado: ', getComputedStyle($teste).background)
+            
+            var $p = document.querySelector('p');
+            console.log($p.offsetHeight, $p.offsetWidth);
+            console.log($p.offsetLeft, $p.offsetTop);
+            
+            var $teste2 = document.querySelector('.teste2');
+            
+            console.log($teste2.offsetLeft, $teste2.offsetTop);
+            
+            console.log($teste.getBoundingClientRect())
+        
+        </script>
+        
+    </body>
+</html>
