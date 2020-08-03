@@ -1,0 +1,27 @@
+body{
+	background-color: #333; /*Coloca cor ao fundo, Valores rgba() e hexadecimal*/
+	background-image: url(img/Wallpaper.png); /*Coloca uma imagem de fundo Valor:	url("caminho") da imagem*/
+	background-repeat: no-repeat; /* Define se a imagem repete ou não; REPEAT-X vai na Horizontal, e REPEAT-Y vai na vertical*/
+	background-attachment: fixed; /*Define se a imagem é fixa ou não, Valores: FIXED (fixa), SCROLL (não fixa)*/
+	background-position: center; /*Posiciona a imagem, temos diversas propriedades, como: LEFT TOP, RIGHT BOTTOM, CENTER CENTER, etc.*/
+	background-size: cover; /*Define o tamanho da foto, COVER tenta cobrir totalmente nosso site com a foto inteira, é possivel definir tamanhos também, como 200px(altura) 200px(largura), auto, etc.
+
+	COLOCA FOTO PELO HTML SE FOR CONTEUDO DO SITE, CASO FOR SO ESTILO COLOCA PELO CSS*/
+
+}
+
+div{
+	width: 200px;
+	height: 400px;
+	margin: 0 auto;
+	background: url(img/tubarao.jpg) no-repeat center;
+	/*background: url(imagem) background-repeat background-position*/
+	background-size: cover; /*COVER se cria sozinho*/
+	box-shadow: 10px/*HORIZONTAL*/ 10px/*VERTICAL*/ 5px /*BLUR*/ black /*COR*/, inset 5px 5px 5px red; /*INSET é pra colocar sombra do lado de dentro, pode ter mais de uma sembra, so separar por virgula, da ate pra substituir uma borda por exemplo(colocando apenas na horizontal, por ex)*/
+	
+	/*
+	visibility: hidden; faz o elemento sumir
+	display: none; faz o elemento ser apagado por completo
+Serve pra criar interações interessantes na hora de apertar em alguns icones por exemplo, atraves do JAVASCRIPT
+	*/
+}

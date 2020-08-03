@@ -1,0 +1,91 @@
+<!DOCTYPE html> 	<!-- Sempre iniciar com essa linha, diz para o browser que estamos trabalhando com HTML 5 -->
+<html lang="pt-br">				<!-- Inicia o documento HTML, Lang especifica qual a linguagem do site -->
+
+	<head> 			<!-- vai se comunicar apenas com o browser, nunca com o usuário -->
+
+		<meta charset="utf-8"> 
+		<title>Introduçao ao html</title> 		<!-- Usado pelo google para exibir resultados -->
+
+		<link rel="stylesheet" type="text/css" href="tag1.css"> <!-- LINKANDO ESSE DOCUMENTO HTML AO CSS -->
+
+	</head>
+
+	<body>  		<!-- conteudo do HTML, o corpo do site, se comunica com o usuário -->
+
+		<h1 class="titulo">Bem vindo ao meu teste sobre as Principais Tags do HTML!</h1> <!-- A CLASSE SERA TRABALHADA NO CSS -->
+
+		<p class="paula">Sessão reservada para teste de propriedade de texto</p>
+
+		<div class="jojo">			
+		<p>Teste pro jojo</p>
+	    </div>
+
+		<p><i>Primeiro</i> <strong>paragrafo</strong> testado.</p> <!-- <p> é a principal tag utilizada em corpo de texto -->
+
+		<p id="pezin">Passe o mouse em cima de mim!</p>
+
+		<p class="tstp">Nossa <em>meta</em> é ser <i>fitness</i></p>
+
+		<p>Testando a quebra de <br> linha</p> <!-- <br> ocasiona uma QUEBRA DE LINHA -->
+
+		<div>
+			<p class="tst">Teste 1 de propriedade de texto</p>
+			<p class="tst3">Teste 2 de propriedade de texto</p>
+			<p class="tst2">Teste 3 de propriedade de texto</p>
+			<p class="tst4">Teste 4 de propriedade de texto</p>
+		</div>
+
+		<div class="subt"> <!-- ELEMENTO ESTRUTURAL para criar BLOCOS, não tem significado semantico, auxilia no CSS -->
+			<h2>Trabalhando com listas</h2>
+		</div>
+
+		<ul> <!-- ul é uma lista NAO ORDENADA -->
+			<li>img</li> <!-- item da lista deve estar dentro de uma li -->
+			<li>meta</li>
+			<li>p</li>
+		</ul>
+
+		<ol> <!-- LISTA ORDENADA POR NUMERAIS -->
+			<li>corinthians</li>
+			<li>flamengo</li>
+			<li>real madrid</li>
+		</ol>
+
+		<ul class="futeba">
+			<li>Cr7</li>
+			<li>Messi</li>
+			<li>Neymar</li>
+			<li>Ibrahimovic</li>
+			<li>Xavi</li>
+		</ul>
+		
+		<h3 class="terc">Trabalhando com imagens e Links</h3>
+
+		<a class:linkoso href="link.html" target="_blank">link de teste</a>
+		
+		<div class="tubarao">
+			<img src="img/tubarao.jpg" alt="tubarao"> <!-- Colocar fotos no site, src é o caminho da foto (endereço no servidor), e alt é o texto alternativo para buscadores e robos do google -->
+		</div>
+	</body>
+
+</html>
+
+<!-- Tags que começam com meta são metatags, a charset define o tipo de caracteres que vamos lidar no site, a utf-8 inclui acentos, etc. -->
+
+<!--  <h1></h1> deve ser unico na pagina, é o TITULO PRINCIPAL que indentifica a pagina -->
+<!--  <h2></h2> é o TITULO SECUNDARIO, subtitulo -->
+<!-- Tag STRONG da mais importancia a uma palavra no texto,mexe com a parte da SEMANTICA, deixa em negrito, tag <b> tambem é utilizada para destacar uma palavra -->
+<!-- Tag <i> destaca palavras em lingua estrangeira, a <em> da enfase a palavra destacada dentro da frase, porém AMBAS deixam a palavra em italico -->
+
+		<!--<article>
+			Representa uma parte independente do documento, é ELEMENTO ESTRUTURAL, SENTIDO SEMANTICO AO LEITOR DE HTML
+		</article>
+
+		<section>
+			Representa uma parte genérica do documento, é ELEMENTO ESTRUTURAL, SENTIDO SEMANTICO AO LEITOR DE HTML
+		</section>-->
+
+
+<!-- Tag <a> é o que gera o link pra vc navegar entre páginas, MUITO IMPORTANTE, o href referencia a pagina que a gente vai ser direcionado, é colocado na tag de abertura do a, exemplo, <a href=""></a>   antes de fechar o primeiro > colocamos os atributos, como o target="_blank", que define se vai ser aberta outra janela ou não -->
+
+<!-- Tag utilizada para comentarios -->

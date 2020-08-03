@@ -1,0 +1,172 @@
+.separador{
+	font-size: 12px;
+	text-transform: uppercase;
+	text-decoration: underline;
+	text-align: center;
+	font-family: georgia;
+	background:#bbb;
+	margin: 0 auto;
+}
+
+.container{
+/*ALGUNS ELEMENTOS SAO SOMADOS*/
+
+	width: 800px; /*Define a largura do box, pode ser em px,% ou auto*/
+	height: 400px; /*Define a altura do box, pode ser em px,% ou auto*/
+	margin: 0 auto; /*Margem, 0 auto alinha a box model ao centro*/
+	background: #ccc; /*Cor do fundo*/
+
+	/*Padding define a distancia entre o conteudo e a borda do box, podem ser declarados padding-top, padding-bottom, padding-left e padding-right
+
+	padding: 10px 20px 30px 40px
+	padding: top right bottom left
+
+	padding: 10px 20px
+	padding: top-bottom right-left*/
+}
+
+.box1{
+	width: 200px;
+	height:80px;
+	background:#aaa;
+	padding: 20px 10px 10px 20px;
+	border: 3px solid black; /*Define a borda da caixa, na seguinte ordem:
+	border: border-widht border-style border-color;
+	*/
+	border-style: dashed; /*Define o estilo da borda, DASHED é uma borda pontilhada, SOLID é a borda sendo uma linha reta, BORDER-BOTTOM só coloca borda na linha de baixo, sai dos outros cantos, BORDER-TOP, BORDER-LEFT, BORDER-RIGHT causa a mesma coisa, cada uma correspondente a sua declaração */
+	margin-top: 20px; /*Margin define a margem entre um elemento e outro, podem ser declaradas MARGIN-TOP, MARGIN-LEFT, MARGIN-RIGHT E MARGIN-BOTTOM, MARGIN: 0 AUTO CENTRALIZA os elementos horizontalmente*/
+	margin-left: 10px;
+}
+p.box1,p.box2,p.box3{
+	color: white;
+}
+
+.box2{
+	width: 200px;
+	height: 80px;
+	background: #aaa;
+	padding: 20px 10px;
+	border-bottom: 1px dashed green;
+	margin-top: 10px;
+	float: right;
+}
+
+.box3{
+	width: 200px;
+	height: 80px;
+	background: #aaa;
+	padding: 20px 10px;
+	border-left: 5px;
+	border-left-style: dotted; /*DOTTED é pontilhado em bolinhas*/
+	margin: 0 auto;
+	clear: both;
+}
+
+header{
+	width:800px; 
+	height:60px;
+	background: purple;
+}
+
+header h1, footer p, aside p, article p{
+	text-align: center;
+	color: white;
+	padding: 20px;
+	font-size: 24px;
+	font-weight:normal;
+	text-transform: uppercase;
+}
+
+footer{
+	width:800px; 
+	height:60px;
+	background: red;
+	clear: both; /*CLEAR impede que elementos flutuem ao seu lado. Valores: BOTH, RIGHT, LEFT e NONE*/
+}
+
+article{
+	width: 580px;
+	height: 300px;
+	background:#222;
+	float: left;
+	margin-top: 20px;
+}
+
+aside{
+	width: 200px;
+	height: 300px;
+	background: green;
+	float: left; /*FLOAT faz com que um elemento de bloco flutue ao lado de outro. Valores: LEFT, RIGHT, NONE*/
+	margin-left: 20px;
+	margin-top: 20px;
+}
+
+.container2{
+	margin: 0 auto; /*ALINHA OS ELEMENTOS AO CENTRO*/
+	width: 800px;
+}
+
+.conteudo2{
+	margin-bottom: 20px;
+	width: 800px;
+	overflow: auto;/*OVERFLOW especifica o que acontece quando o conteudo for maior que a caixa dele, Valores: VISIBLE(Torna tudo visivel, mesmo o que for maior que a caixa que definimos, o HIDDEN (Oculta tudo), AUTO e SCROLL*/
+	position: relative;
+}
+
+/*POSITION define o posicionamento do elemento. Valorfes: STATIC, ABSOLUTE (Leva em consideração o documento todo, e não mais a div que ele esta inserido, se tiver rolagem no site ele ira acompanhar a pagina, ou seja, é responsivo), RELATIVE (Gera um posicionamento diante dele mesmo), FIXED, top, left, right e bottom posicionam elementos com POSITION (menos static)
+
+
+z-index: define qual elemento vem por cima ou por baixo. o maior elemento vem por cima
+
+se uma div esta como RELATIVE, a div que estara dentro dessa div relative sera ABSOLUTE apenas dentro dela, e não mais considerando o documento todo
+
+DISPLAY: Define o comportamento do elemento. Elementos como span, em e strong possuem por padrão o display INLINE (Não quebram linhas); div, article, p , h1, li e outros possuem por padrão o display: BLOCK, então sempre que adicionados quebram linhas; 
+
+é possivel declarar widht e height para elementos de bloco, mas não para elementos inline. Existe também o INLINE-BLOCK, que por padrão não quebra a linha, mas permite decararmos widht e height;*/
+
+.quart{ /*Classe puxada la do HTML*/
+	color: black;
+	font-size: 12px;
+	text-transform: uppercase;
+	text-decoration: underline;
+	text-align: center;
+	font-family: georgia;
+	background:#bbb;
+	padding: 50px;
+}
+
+.formcaixa{
+	font-size: 18px;
+	color: blue;
+	padding: 30px;
+}
+
+.totaltable{
+	height: 50%;
+	width: 50%;
+	background:yellow;
+	margin:0 auto;
+}
+
+.tabela1{
+	background: black;
+	color:white;
+	font-size: 20px;
+	text-align: center;
+	font-size: 16px;
+	font-style: normal;
+	width: 30%;
+}
+
+.tabela2{
+	background: black;
+	color:white;
+	font-size: 20px;
+	text-align: center;
+	font-size: 16px;
+	font-style: normal;
+	float: right;
+	position: relative;
+	margin-bottom: 100px;
+	width: 30%;
+}

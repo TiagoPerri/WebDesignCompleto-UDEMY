@@ -1,0 +1,138 @@
+<!DOCTYPE html> 	
+<html lang="pt-br">			
+
+	<head> 		
+
+		<meta charset="utf-8"> 
+		<title>Introduçao ao html</title> 
+
+		<link rel="stylesheet" type="text/css" href="tag2.css">
+
+	</head>
+
+	<body>
+
+		<div class="separador">
+			<h1>Trabalhando com box model</h1>
+		</div>
+
+		<div class="container">
+			<div class="box1">
+				<p>teste de box model</p>
+			</div>
+			<div class="box2">
+				<p>teste de box model</p>
+			</div>
+			<div class="box3">
+				<p>teste de box model</p>
+			</div>
+		</div>
+
+		<div class="container2">
+			<header>
+				<h1>Header</h1>
+			</header>
+
+			<div class="conteudo2">
+				<article>
+					<p>Conteudo</p>
+				</article>
+
+				<aside>
+					<p>Sidebar</p>
+				</aside>
+			</div>
+
+			<footer>
+				<p>Footer</p>
+			</footer>
+		</div>
+
+		<div class="separador">	
+			<h4 class="quart">Trabalhando com formulário e tabela</h4>
+		</div>
+
+		<form action="enviar.php" method="POST" name="form" > <!-- Cria um FORMULARIO -->
+			<!-- Atributo ACTION define a ação do formulário, atributo METHOD especifica se é GET (buscador) ou POST (envio), FOR E ID é para linkar uma coisa na outra -->
+			
+			<div>
+				<label for="nome">nome *</label> <!-- Nome do lado da caixa de texto -->
+				<input type="text" id="nome" name="nome" required> <!-- caixa de texto -->
+			</div>
+
+			<div>
+				<label for="email">email *</label>
+				<input type="password" id="email" name="email" required>
+			</div>
+
+			<div class="formcaixa">
+				<label for="retro"><input id="retro" type="checkbox" value="retro" name="">TPGO</label>
+				<label for="esporte"><input id="esporte" type="checkbox" value="esporte" name="esporte">TIAGO PERRI</label>
+				<label for="profissa"><input id="profissa" type="checkbox" value="profissa" name="profissa">FAMILIA RAP</label>
+			</div>
+
+			<label for="mensagem">Mensagem</label>
+			<textarea id="mensagem" name="mensagem"></textarea> <!-- Area de texto maior que o input -->
+
+			<button type="submit">enviar</button>
+
+		</form>
+
+		<div class="totaltable">
+			<div class="tabela1">
+				<table>  <!-- Cria uma Tabela -->
+				<tr> <!-- table read, cria LINHA na tabela -->
+					<th>Modelo</th> <!-- table head, os TITULOS dos dados da tabela -->
+					<th>Preço</th>
+				</tr>
+				<tr>
+					<td class="data">Tpgo</td> <!-- table data, os DADOS da tabela -->
+					<td>Preço altíssimo</td>
+				</tr>
+				<tr>
+					<td class="data">Gol</td>
+					<td>25000</td>
+				</tr>
+				<tr>
+					<td class="data">Volvo</td>
+					<td>60000</td>
+				</tr>
+				</table>
+			</div>
+
+			<div class="tabela2">
+				<table>
+					<tr>
+						<th>Nome</th>
+						<th>Gols</th>
+					</tr>
+					<tr>
+						<td>Cr7</td>
+						<td>725</td>
+					</tr>
+					<tr>
+						<td>Messi</td>
+						<td>698</td>
+					</tr>
+				</table>
+				
+			</div>
+		</div>
+
+		<!-- <span></span> é um ELEMENTO ESTRUTURAL em LINHA (o que a difere do DIV) para criar BLOCOS , não tem significado semantico, auxilia no CSS, HEADER(Cabeçalho), FOOTER(Rodapé) e NAV (parte de navegação do site) tb são elementos estruturais -->
+
+<!-- 
+FORMULARIO: tipos de INPUT
+
+Password - não mostra o que está sendo digitado, fica oculto
+Checkbox - Nos da diversos quadradinhos que é possivel marca-los
+text - caixa de texto normal
+email - caixa de texto especifica pra email
+color - nos da a opção do usuário indicar a cor que ele quer
+
+SELECT é um tipo de formulário que nos da uma lista para escolhermos, tipo lista de estado
+TEXTAREA é uma área de texto flexive
+-->
+		
+	</body>
+</html>

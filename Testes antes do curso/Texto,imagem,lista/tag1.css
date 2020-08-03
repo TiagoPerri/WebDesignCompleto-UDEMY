@@ -1,0 +1,144 @@
+h1.titulo /*SELETOR*/{
+	color:#000;
+	font-size: 20px;
+	text-align: center;
+	font-family: georgia;
+	text-transform: uppercase;
+	background: #bbb;
+	padding: 100px;
+
+	/* FONT STYLE: pode ser normal, oblique (Tipografias sem serifa (arial)) e italic (tipografias serifadas (Georgia, times new roman)); 
+
+	EM é uma unidade de medida relativa, 1em equivale a 16px, que é o tamanho de fonte padrão de um browser
+	*/
+}
+
+.paula{
+	text-align: center;
+	font-size: 14px;
+	text-decoration: underline;
+	background: black;
+	color:white;
+	padding: 25px;
+}
+
+.jojo{
+	font-size: 20px;
+	background: yellow;
+	font-style:italic;
+	text-align: center;
+	padding: 10px;
+	margin: 0 auto;
+	width: 50%;
+}
+
+#pezin:hover{
+	background: orange;
+	text-transform: uppercase;
+}
+
+.tstp{
+	text-shadow: 5px 1px 10px black;
+	background:grey;
+	padding: 10px;
+	color: black;
+	width: 45px;
+	text-align: center;
+}
+
+.tst{
+	color:rgba(0,0,0,1); /*RGB sigla para red green blue, o A se refere a transparencia, de 0 (transparente) a 1 (opaco)*/
+	font-style: italic; /*Estilo do texto*/
+	font-weight: bold; /*Peso do texto, de 100 a 900 (negrito), alem de bold, bolder, normal*/
+	font-size: 14px; /*Tamanho da fonte*/
+	line-height: 28px; /*Tamanho da linha, altura*/
+	font-family: arial, helvetica; /*Define a familia tipografica, a segunda fonte toma o lugar da primeira caso essa não esteja disponivel*/
+}
+
+.tst2{
+	color:#000;
+	font: normal 400 18px/28px "Times new roman";
+
+	/*font: font-style font-weight font-size/line-height font-family;*/
+}
+
+.tst3{
+	color:black;
+	font-size: 12px;
+	text-align: center; /*Alinhamento do texto, pode ser right, left ou center*/
+	text-transform: uppercase; /*Deixa tudo maiusculo, o LOWERCASE deixa tudo em minisculo, o CAPITALIZE é só as primeiras letras da frase em maiusculo*/
+	text-indent: 40px; /*Indenta o texto, da o TAB para paragrafo*/
+}
+
+.tst4{
+	color:black;
+	background:grey;
+	text-align: right;
+	text-decoration: underline; /*Decora o texto, OVERLINE é sublinhado encima, UNDERLINE é sublinhado normal e o LINE-THROUGH, que passa uma linha cortando ao meio o texto, além do NONE, que retira toda as decoraçoes por ex do <a>*/
+	text-shadow: -20px 1px 5px black; /*Coloca uma sombra ao texto, text-shadow: horizontal vertical blur cor, pode se usar valores negativos, pra levar a sombra a esquerda ou acima*/
+
+	white-space: nowrap; /*Forçar a NAO quebra de linhas, texto continuo*/
+	word-spacing: 1px; /*Espaço entre palavras*/
+	letter-spacing: 1px; /*Espaço entre letras, o TRACKING*/
+}
+
+.subt{ /*Classe puxada la do HTML*/
+	color: black;
+	font-size: 12px;
+	text-transform: uppercase;
+	text-decoration: underline;
+	text-align: center;
+	font-family: georgia;
+	background:#bbb;
+	padding: 50px;
+}
+
+ul li:nth-child(2){ /* :NTH-CHILD(NUMERO DO ELEMENTO QUE QUEREMOS MODIFICAR), modifica elementos em listas por exemplo */
+	color: red;
+}
+
+.futeba{
+	list-style-type: circle; /*CIRCLE é Só o contorno da bolinha, SQUARE é um quadradinho preenchido, DISC é a bolinha preenchida*/
+	list-style-position: inside; /*Inside por dentro da lista, outside por fora*/
+	/* list-style-image: url(""); /*O endereço da imagem dentro do URL que irá substituir o list style type, LIST-STYLE:NONE tira todo o estilo da lista*/
+}
+
+.sep{
+	background:black;
+	text-decoration: underline;
+	font-size: 18px;
+	color: white;
+	text-align: center;
+}
+
+
+.terc{ /*Classe puxada la do HTML*/
+	color: black;
+	font-size: 12px;
+	text-transform: uppercase;
+	text-decoration: underline;
+	text-align: center;
+	font-family: georgia;
+	background:#bbb;
+	padding: 50px;
+}
+
+a:hover{ /* :HOVER é uma subclasse que lida com as alterações quando PASSA O MOUSE ENCIMA */
+	text-transform: uppercase;
+	font-size: 30px;
+	color: red;
+	background: black;
+}
+
+.tubarao{
+	text-align: center;
+}
+
+/*ID é unico, só pode ter um, é declarado com #, diferentemente de CLASS, 
+que podemos por varios elementos dentro de uma classe, que é declarada como .classe */
+
+/* SEMPRE O QUE VEM POR ULTIMO E MAIS IMPORTANTE, se tiver dois h1 o css pega as especificaçoes do ultimo */
+/* quanto mais especificado melhor, até para os seletores,que servem para o CSS não mudar
+todos os P do site por exemplo, mas só a que está dentro de uma div específica  */
+
+/* SIMBOLOS PRA FAZER COMENTARIOS */
